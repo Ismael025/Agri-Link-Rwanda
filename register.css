@@ -27,15 +27,22 @@ fieldset {
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
-legend {
-  font-size: 28px;
-  font-weight: 700;
-  color: #1e4620;
-  padding: 0 20px;
-  margin-bottom: 30px;
+.form-header {
   text-align: center;
-  width: 100%;
-  border: none;
+  margin-bottom: 35px;
+}
+
+.form-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #1e4620;
+  letter-spacing: 0.6px;
+}
+
+.form-header p {
+  font-size: 14px;
+  color: #4a6c45;
+  font-weight: 500;
 }
 
 form {
