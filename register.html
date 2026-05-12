@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <title>Agri-Link - Registration</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Registration</legend>
+   <form action="http://www.agrinet.com/register.php" method="get">
+     <p><label>National ID</label><input type="number" name="number" maxlength="30"/></p>
+     <p><label>Full Name</label><input type="text" name="user name" maxlength="30"/></p>
+     <p><label>Gender</label>
+     <select name="Gender">
+      <option value="choose">Select...</option>
+      <option value="male">Male</option>
+      <option value="Female">Female</option>
+     </select>
+     </p>
+     <p><label>User Type</label>
+     <select name="select">
+      <option value="choose">Whether you are farmer or buyer...</option>
+      <option value="male">Farmer</option>
+      <option value="Female">Buyer</option>
+     </select>
+     </p>
+     <p><label>Province</label><input type="text" name="province"></p>
+     <p><label>District</label><input type="text" name="district"></p>
+     <p><label>Sector</label><input type="text" name="sector"></p>
+     <p><label>Cell</label><input type="text" name="cell"></p>
+     <input type="submit" name="Register" value="Register"/>
+   </form>
+  </fieldset>
+  <a href="example.html">← Back to Home</a>
+</body>
+</html>
