@@ -30,7 +30,7 @@ body {
 .header .left img {
   height: 60px;
   object-fit: contain;
-  filter: brightness(1.1);
+  
 }
 
 .header .right {
@@ -68,7 +68,7 @@ body {
   margin-top: 90px;
   min-height: calc(100vh - 90px);
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-              url("image/agrihome.jpeg");
+              url("image/farmer2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -83,11 +83,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
-  max-width: 560px;
-  margin-left: 40px;
+  gap: 20px;
+  max-width: 400px;
+  margin-left: 0px;
   background: rgba(44, 95, 45, 0.92);
-  padding: 40px;
+  padding: 20px;
   border-radius: 18px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -100,8 +100,8 @@ body {
 
 .hero-text p {
   font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  line-height: 1.9;
+  margin-bottom: 0px;
   font-weight: 300;
 }
 
@@ -131,6 +131,7 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(118, 215, 118, 0.6);
   background: linear-gradient(135deg, #5ac55a 0%, #4aac4a 100%);
+  cursor: pointer;
 }
 
 .btn:active {
@@ -210,6 +211,7 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(44, 95, 45, 0.2);
   border-color: rgba(76, 175, 80, 0.3);
+  cursor: pointer;
 }
 
 .select h3 {
