@@ -1,0 +1,53 @@
+/* Shared header styles for all Agri-Link pages */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header .left img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.header .right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header .right a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.header .right a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #76d776;
+  transition: width 0.3s ease;
+}
+
+.header .right a:hover::after {
+  width: 100%;
+}
+
+.page-content {
+  padding-top: 100px;
+}
