@@ -15,42 +15,59 @@
     <nav class="right">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="example.html#offer">Solution</a>
+      <a href="login.html">Login</a>
       <a href="example.html#contact">Contact Us</a>
       <a href="register.html">Register</a>
     </nav>
   </header>
   <div class="page-content">
-  <fieldset>
-    <div class="form-header">
-      <h1>Registration</h1>
-      <p>Complete your details to join Agri-Link</p>
+    <div class="register-panel">
+      <section class="register-info">
+        <span>Welcome to Agri-Link</span>
+        <h2>Build your agricultural network</h2>
+        <p>Register now to connect with farmers, buyers, and local market opportunities across Rwanda. Agri-Link helps you trade produce, discover trusted partners, and grow your agricultural business.</p>
+        <ul>
+          <li>Secure account setup for first-time users</li>
+          <li>Easy access to farmer and buyer matching</li>
+          <li>Track market demand and stay informed</li>
+        </ul>
+      </section>
+
+      <fieldset class="register-form">
+        <div class="form-header">
+          <h1>Create your account</h1>
+          <p>Complete the form below to join Agri-Link and start trading.</p>
+        </div>
+        <form action="http://www.agrinet.com/register.php" method="get">
+          <p><label>National ID</label><input type="text" name="national_id" inputmode="numeric" pattern="[0-9]*" maxlength="16" placeholder="Enter your national ID" required /></p>
+          <p><label>Full Name</label><input type="text" name="full_name" maxlength="50" placeholder="Your full name" required /></p>
+          <p><label>Gender</label>
+            <select name="gender" required>
+              <option value="">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+          <p><label>User Type</label>
+            <select name="user_type" required>
+              <option value="">Farmer or Buyer?</option>
+              <option value="farmer">Farmer</option>
+              <option value="buyer">Buyer</option>
+            </select>
+          </p>
+          <p><label>Province</label><input type="text" name="province" placeholder="Province" required></p>
+          <p><label>District</label><input type="text" name="district" placeholder="District" required></p>
+          <p><label>Sector</label><input type="text" name="sector" placeholder="Sector" required></p>
+          <p><label>Cell</label><input type="text" name="cell" placeholder="Cell" required></p>
+          <p><label>Email Address</label><input type="email" name="email" placeholder="name@example.com" required /></p>
+          <p><label>Create Password</label><input type="password" name="password" minlength="8" placeholder="Choose a secure password" required /></p>
+          <p><label>Confirm Password</label><input type="password" name="confirm_password" minlength="8" placeholder="Re-enter your password" required /></p>
+          <input type="submit" name="Register" value="Register"/>
+        </form>
+      </fieldset>
     </div>
-   <form action="http://www.agrinet.com/register.php" method="get">
-     <p><label>National ID</label><input type="number" name="number" maxlength="30"/></p>
-     <p><label>Full Name</label><input type="text" name="user name" maxlength="30"/></p>
-     <p><label>Gender</label>
-     <select name="Gender">
-      <option value="choose">Select...</option>
-      <option value="male">Male</option>
-      <option value="Female">Female</option>
-     </select>
-     </p>
-     <p><label>User Type</label>
-     <select name="select">
-      <option value="choose">Whether you are farmer or buyer...</option>
-      <option value="male">Farmer</option>
-      <option value="Female">Buyer</option>
-     </select>
-     </p>
-     <p><label>Province</label><input type="text" name="province"></p>
-     <p><label>District</label><input type="text" name="district"></p>
-     <p><label>Sector</label><input type="text" name="sector"></p>
-     <p><label>Cell</label><input type="text" name="cell"></p>
-     <input type="submit" name="Register" value="Register"/>
-   </form>
-  </fieldset>
-  <a href="example.html">← Back to Home</a>
+    <a href="example.html">← Back to Home</a>
   </div>
     <footer>
       <div class="footer-all">

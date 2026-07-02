@@ -12,23 +12,85 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 40px 20px;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.register-panel {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.register-info {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 42px 36px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.register-info span {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #d2f0d2;
+  font-weight: 700;
+}
+
+.register-info h2 {
+  font-size: 38px;
+  line-height: 1.1;
+  max-width: 420px;
+  color: white;
+}
+
+.register-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 460px;
+  color: #e6f3e6;
+}
+
+.register-info ul {
+  list-style: inside disc;
+  color: #dfe7df;
+  display: grid;
+  gap: 10px;
+  padding-left: 0;
+}
+
+.register-info ul li {
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 /* ===== FORM CONTAINER ===== */
 fieldset {
   width: 100%;
-  max-width: 500px;
   background: white;
   border: none;
-  border-radius: 15px;
-  padding: 50px 40px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 45px 36px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.18);
 }
 
 .form-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 35px;
 }
 
@@ -66,6 +128,8 @@ form p label {
 
 /* ===== INPUT FIELDS ===== */
 input[type="text"],
+input[type="email"],
+input[type="password"],
 input[type="number"],
 select {
   padding: 12px 15px;
@@ -78,6 +142,8 @@ select {
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
 input[type="number"]:focus,
 select:focus {
   outline: none;
@@ -139,17 +205,36 @@ a:hover {
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .register-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .register-info {
+    padding: 30px 28px;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 20px;
   }
 
   fieldset {
-    padding: 40px 25px;
+    padding: 30px 25px;
   }
 
-  legend {
-    font-size: 24px;
+  .register-info h2 {
+    font-size: 30px;
+  }
+
+  .register-info p,
+  .register-info ul li {
+    font-size: 15px;
+  }
+
+  a {
+    margin-top: 20px;
   }
 }
 
