@@ -68,7 +68,7 @@ body {
   margin-top: 90px;
   min-height: calc(100vh - 90px);
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
-              url("image/farmer2.jpg");
+              url("../image/farmer2.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   background-position: center top;
