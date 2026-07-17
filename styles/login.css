@@ -120,7 +120,8 @@
       color: #2c5f2d;
     }
 
-    .form-group input {
+    .form-group input,
+    .form-group select {
       width: 100%;
       padding: 14px 16px;
       border-radius: 12px;
@@ -130,7 +131,13 @@
       color: #22311d;
     }
 
-    .form-group input:focus {
+    .form-group select {
+      appearance: none;
+      cursor: pointer;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
       outline: none;
       border-color: #76d776;
       background: #ffffff;
