@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage agricultural products listed on Agri-Link.">
+  <title>My Products | Agri-Link</title>
+  <link rel="stylesheet" href="../style codes/products.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="logo" href="farmer-dashboard.html">
+      <span class="logo-icon">🌱</span>
+      <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+    </a>
+
+    <p class="menu-title">Workspace</p>
+    <nav>
+      <a class="nav-link" href="farmer-dashboard.html"><span class="nav-icon">▦</span>Dashboard</a>
+      <a class="nav-link active" href="products.html"><span class="nav-icon">📦</span>My Products</a>
+      <a class="nav-link" href="orders.html"><span class="nav-icon">🛒</span>Orders <span class="nav-count">5</span></a>
+      <a class="nav-link" href="buyers.html"><span class="nav-icon">👥</span>Buyers</a>
+      <a class="nav-link" href="market-prices.html"><span class="nav-icon">📈</span>Market Prices</a>
+      <a class="nav-link" href="messages.html"><span class="nav-icon">💬</span>Messages <span class="nav-count">3</span></a>
+      <a class="nav-link" href="analytics.html"><span class="nav-icon">📊</span>Analytics</a>
+      <a class="nav-link" href="reviews.html"><span class="nav-icon">⭐</span>Reviews</a>
+      <a class="nav-link" href="wallet.html"><span class="nav-icon">💳</span>Wallet</a>
+      <a class="nav-link" href="notifications.html"><span class="nav-icon">🔔</span>Notifications</a>
+    </nav>
+
+    <p class="menu-title">Account</p>
+    <nav>
+      <a class="nav-link" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+      <a class="nav-link" href="settings.html"><span class="nav-icon">⚙</span>Settings</a>
+      <a class="nav-link" href="help.html"><span class="nav-icon">?</span>Help Center</a>
+      <a class="nav-link" href="#"><span class="nav-icon">↪</span>Logout</a>
+    </nav>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="page">
+    <header class="topbar">
+      <button class="menu-button" id="menuButton" aria-label="Open menu">☰</button>
+      <div class="top-search">
+        <input type="search" placeholder="Search products, orders, buyers..." aria-label="Search website">
+      </div>
+      <div class="farmer">
+        <button class="bell" aria-label="Notifications">🔔</button>
+        <span class="avatar">IM</span>
+        <span class="farmer-info"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <div>
+          <h1>My Products</h1>
+          <p>Add, update and manage all the agricultural products you sell.</p>
+        </div>
+        <button class="primary-button" id="openFormButton">＋ Add New Product</button>
+      </section>
+
+      <section class="summary-grid" aria-label="Product summary">
+        <article class="summary-card"><span class="summary-icon">📦</span><div><strong>24</strong><span>Total Products</span></div></article>
+        <article class="summary-card"><span class="summary-icon">✓</span><div><strong>20</strong><span>Active Products</span></div></article>
+        <article class="summary-card"><span class="summary-icon">⌛</span><div><strong>2</strong><span>Pending Approval</span></div></article>
+        <article class="summary-card"><span class="summary-icon">!</span><div><strong>2</strong><span>Out of Stock</span></div></article>
+      </section>
+
+      <section class="panel">
+        <div class="toolbar">
+          <input class="filter-search" id="productSearch" type="search" placeholder="Search by product name or category...">
+          <div class="filters">
+            <select id="categoryFilter" aria-label="Filter by category">
+              <option value="all">All Categories</option>
+              <option value="vegetables">Vegetables</option>
+              <option value="grains">Grains</option>
+              <option value="fruits">Fruits</option>
+              <option value="tubers">Tubers</option>
+            </select>
+            <select id="statusFilter" aria-label="Filter by status">
+              <option value="all">All Statuses</option>
+              <option value="active">Available</option>
+              <option value="pending">Pending Approval</option>
+              <option value="paused">Paused</option>
+              <option value="sold">Sold Out</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-area">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Availability</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="productTable">
+              <tr data-name="fresh tomatoes" data-category="vegetables" data-status="active">
+                <td><div class="product-cell"><span class="product-image">🍅</span><span><strong>Fresh Tomatoes</strong><small>Added 12 July 2026</small></span></div></td>
+                <td>Vegetables</td><td>600 RWF/kg</td><td>480 kg</td><td>Available</td><td><span class="status active-status">Active</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button pause-button">Pause</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+              <tr data-name="yellow maize" data-category="grains" data-status="active">
+                <td><div class="product-cell"><span class="product-image">🌽</span><span><strong>Yellow Maize</strong><small>Added 8 July 2026</small></span></div></td>
+                <td>Grains</td><td>21,000 RWF/bag</td><td>35 bags</td><td>Available</td><td><span class="status active-status">Active</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button pause-button">Pause</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+              <tr data-name="irish potatoes" data-category="tubers" data-status="active">
+                <td><div class="product-cell"><span class="product-image">🥔</span><span><strong>Irish Potatoes</strong><small>Added 5 July 2026</small></span></div></td>
+                <td>Tubers</td><td>350 RWF/kg</td><td class="stock-low">45 kg – Low</td><td>Available</td><td><span class="status active-status">Active</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button restock-button">Restock</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+              <tr data-name="fresh avocados" data-category="fruits" data-status="pending">
+                <td><div class="product-cell"><span class="product-image">🥑</span><span><strong>Fresh Avocados</strong><small>Added 16 July 2026</small></span></div></td>
+                <td>Fruits</td><td>16,000 RWF/crate</td><td>18 crates</td><td>Awaiting approval</td><td><span class="status pending-status">Pending</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+              <tr data-name="green beans" data-category="vegetables" data-status="paused">
+                <td><div class="product-cell"><span class="product-image">🫛</span><span><strong>Green Beans</strong><small>Added 28 June 2026</small></span></div></td>
+                <td>Vegetables</td><td>900 RWF/kg</td><td>95 kg</td><td>Not visible</td><td><span class="status paused-status">Paused</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button pause-button">Activate</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+              <tr data-name="ripe bananas" data-category="fruits" data-status="sold">
+                <td><div class="product-cell"><span class="product-image">🍌</span><span><strong>Ripe Bananas</strong><small>Added 23 June 2026</small></span></div></td>
+                <td>Fruits</td><td>12,000 RWF/bunch</td><td class="stock-empty">0 bunches</td><td>Out of stock</td><td><span class="status sold-status">Sold Out</span></td>
+                <td><div class="actions"><button class="small-button">View</button><button class="small-button">Edit</button><button class="small-button restock-button">Restock</button><button class="small-button delete-button">Delete</button></div></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="empty-message" id="emptyMessage">No product matches your search or selected filters.</div>
+        </div>
+
+        <div class="table-footer">
+          <span>Showing 1–6 of 24 products</span>
+          <div class="pagination"><button>‹</button><button class="active">1</button><button>2</button><button>3</button><button>4</button><button>›</button></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Add Product Form -->
+  <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div><h2 id="formTitle">Add New Product</h2><p>Provide clear information to help buyers understand your product.</p></div>
+        <button class="close-button" id="closeFormButton" aria-label="Close form">×</button>
+      </div>
+
+      <form id="productForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="productName">Product Name *</label>
+            <input id="productName" type="text" placeholder="Example: Fresh Tomatoes" required>
+          </div>
+          <div class="form-group">
+            <label for="productCategory">Category *</label>
+            <select id="productCategory" required>
+              <option value="">Select a category</option><option>Vegetables</option><option>Fruits</option><option>Grains</option><option>Tubers</option><option>Dairy</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="description">Product Description *</label>
+            <textarea id="description" placeholder="Describe the quality, variety and condition of the product..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="price">Price (RWF) *</label>
+            <input id="price" type="number" min="1" placeholder="Example: 600" required>
+          </div>
+          <div class="form-group">
+            <label for="unit">Selling Unit *</label>
+            <select id="unit" required><option value="">Select a unit</option><option>Kilogram (kg)</option><option>Bag</option><option>Crate</option><option>Bunch</option><option>Litre</option><option>Piece</option></select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Available Quantity *</label>
+            <input id="quantity" type="number" min="1" placeholder="Example: 500" required>
+          </div>
+          <div class="form-group">
+            <label for="harvestDate">Harvest Date *</label>
+            <input id="harvestDate" type="date" required>
+          </div>
+          <div class="form-group">
+            <label for="district">District *</label>
+            <select id="district" required><option value="">Select district</option><option>Bugesera</option><option>Huye</option><option>Kayonza</option><option>Musanze</option><option>Nyagatare</option><option>Rubavu</option><option>Rusizi</option><option>Other</option></select>
+          </div>
+          <div class="form-group">
+            <label for="organic">Is This Product Organic? *</label>
+            <select id="organic" required><option value="">Select an answer</option><option>Yes</option><option>No</option></select>
+          </div>
+          <div class="form-group full-width">
+            <label for="productImages">Product Images *</label>
+            <input id="productImages" type="file" accept="image/*" multiple required>
+            <small>Upload clear JPG or PNG images of the real product.</small>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <button class="secondary-button" id="cancelButton" type="button">Cancel</button>
+          <button class="primary-button" type="submit">Submit for Approval</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="message" id="message">Action completed.</div>
+
+  <script src="../Js/products.js"></script>
+</body>
+</html>
