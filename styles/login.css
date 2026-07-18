@@ -11,6 +11,38 @@
       min-height: 100vh;
     }
 
+    header.header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      width: 100%;
+    }
+
+    header.header .left {
+      display: flex;
+      align-items: center;
+    }
+
+    header.header .right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    header.header .right a {
+      color: #f5fff4;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    header.header .right a:hover {
+      color: #8fd59e;
+    }
+
     main.login-page {
       display: flex;
       min-height: 100vh;

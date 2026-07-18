@@ -1,53 +1,166 @@
-/* Shared header styles for all Agri-Link pages */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+
+  height: 82px;
+  background-color: #123524;
   z-index: 1000;
+}
+
+.header-container {
+  width: min(100% - 40px, 1180px);
+  height: 100%;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background: linear-gradient(135deg, #2c5f2d 0%, #1e4620 100%);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-.header .left img {
-  height: 60px;
-  object-fit: contain;
-}
-
-.header .right {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
-
-.header .right a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 15px;
-  transition: all 0.3s ease;
   position: relative;
 }
 
-.header .right a::after {
-  content: '';
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 55px;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  margin-left: auto;
+}
+
+.navigation a {
+  position: relative;
+  color: #e7f1e9;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navigation a:not(.header-cta)::after {
+  content: "";
   position: absolute;
-  bottom: -5px;
+  right: 0;
+  bottom: -8px;
   left: 0;
-  width: 0;
   height: 2px;
-  background: #76d776;
-  transition: width 0.3s ease;
+  background: #8fd59e;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
 }
 
-.header .right a:hover::after {
-  width: 100%;
+.navigation a:hover::after,
+.navigation a.active::after {
+  transform: scaleX(1);
 }
 
-.page-content {
-  padding-top: 100px;
+.navigation .login-link {
+  padding-left: 22px;
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.navigation .header-cta {
+  padding: 11px 18px;
+  border: 1px solid #8fd59e;
+  border-radius: 8px;
+  background: #8fd59e;
+  color: #123524;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.navigation .header-cta:hover {
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+.menu-checkbox,
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .header {
+    height: 72px;
+  }
+
+  .header-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .menu-button {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    padding: 10px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #ffffff;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    max-height: 0;
+    padding: 0 25px;
+    overflow: hidden;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    background: #123524;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+  }
+
+  .navigation a {
+    padding: 13px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  }
+
+  .navigation a::after {
+    display: none;
+  }
+
+  .navigation .login-link {
+    padding-left: 5px;
+    border-left: 0;
+  }
+
+  .navigation .header-cta {
+    margin: 12px 0 20px;
+    border: 0;
+    text-align: center;
+  }
+
+  .menu-checkbox:checked ~ .navigation {
+    max-height: 620px;
+    padding-top: 8px;
+  }
 }

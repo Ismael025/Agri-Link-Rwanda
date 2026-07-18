@@ -3,83 +3,471 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/index.css">
+  <meta name="description" content="Agri-Link connects buyers with verified farmers, agricultural products, transparent market prices and delivery services across Rwanda.">
+  <title>Agri-Link | Connecting Farmers and Buyers</title>
   <link rel="stylesheet" href="../styles/header.css">
-  <title>Agri-Link</title>
+  <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
-
   <header class="header">
-    <div class="left">
-      <a href="example.html"><img src="../image/header.png" alt="logo"></a>
-    </div>
+    <div class="header-container">
+      <a class="logo" href="index.html" aria-label="Agri-Link homepage">
+        <img src="../image/header.png" alt="Agri-Link logo">
+      </a>
 
-    <nav class="right">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact us</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
-    </nav>
+      <!-- Pure CSS mobile-menu control. JavaScript is not required. -->
+      <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+      <label class="menu-button" for="menu-checkbox" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="market-prices.html">Market Prices</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a class="login-link" href="login.html">Login</a>
+        <a class="header-cta" href="register.html">Get Started</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="eyebrow">Rwanda's digital agricultural marketplace</span>
+          <h1 id="hero-title">Connecting farmers to reliable markets</h1>
+          <p>
+            Buy and sell quality agricultural products, compare transparent
+            market prices, communicate directly and organize delivery through
+            one trusted platform.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="marketplace.html">Browse Products</a>
+            <a class="button button-secondary" href="register.html">Start Selling</a>
+          </div>
+
+          <div class="hero-points" aria-label="Platform benefits">
+            <span>Verified participants</span>
+            <span>Transparent prices</span>
+            <span>Delivery support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="platform-summary" aria-label="Agri-Link platform summary">
+      <div class="container summary-grid">
+        <article class="summary-item">
+          <strong>Verified</strong>
+          <span>Farmers and buyers</span>
+        </article>
+        <article class="summary-item">
+          <strong>Fresh</strong>
+          <span>Agricultural products</span>
+        </article>
+        <article class="summary-item">
+          <strong>Transparent</strong>
+          <span>Market-price information</span>
+        </article>
+        <article class="summary-item">
+          <strong>Connected</strong>
+          <span>Orders and delivery</span>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Simple and practical</span>
+          <h2>How Agri-Link works</h2>
+          <p>
+            The platform gives buyers and farmers a clear process from product
+            discovery to successful delivery and payment.
+          </p>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow buyer-workflow">
+            <div class="workflow-heading">
+              <span class="workflow-number">01</span>
+              <div>
+                <p class="small-label">For buyers</p>
+                <h3>Find and order farm products</h3>
+              </div>
+            </div>
+            <ol>
+              <li><span>1</span>Search products and verified farmers</li>
+              <li><span>2</span>Compare prices, quality and location</li>
+              <li><span>3</span>Place an order and select delivery</li>
+              <li><span>4</span>Track the order and confirm receipt</li>
+            </ol>
+            <a href="register.html" class="text-link">Create a buyer account</a>
+          </article>
+
+          <article class="workflow seller-workflow">
+            <div class="workflow-heading">
+              <span class="workflow-number">02</span>
+              <div>
+                <p class="small-label">For farmers</p>
+                <h3>List products and reach buyers</h3>
+              </div>
+            </div>
+            <ol>
+              <li><span>1</span>Create and verify a seller account</li>
+              <li><span>2</span>Add products, prices and quantities</li>
+              <li><span>3</span>Accept and prepare buyer orders</li>
+              <li><span>4</span>Arrange delivery and receive payment</li>
+            </ol>
+            <a href="register.html" class="text-link">Create a farmer account</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading heading-with-action">
+          <div>
+            <span class="section-label">Marketplace</span>
+            <h2>Fresh products available now</h2>
+            <p>Explore agricultural products offered by farmers and cooperatives across Rwanda.</p>
+          </div>
+          <a class="button button-outline" href="marketplace.html">View All Products</a>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/rice.jpeg" alt="Locally produced Rwandan rice">
+              <span class="product-category">Grains</span>
+            </div>
+            <div class="product-content">
+              <h3>Rwandan Rice</h3>
+              <p class="product-location">Rusizi District</p>
+              <div class="product-details">
+                <span><strong>1,500 RWF</strong> / kg</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified local producer</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/maize.jpeg" alt="Rwandan maize ready for sale">
+              <span class="product-category">Grains</span>
+            </div>
+            <div class="product-content">
+              <h3>Rwandan Maize</h3>
+              <p class="product-location">Huye District</p>
+              <div class="product-details">
+                <span><strong>420 RWF</strong> / kg</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified farmer</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/cassava.jpeg" alt="Fresh Rwandan cassava">
+              <span class="product-category">Tubers</span>
+            </div>
+            <div class="product-content">
+              <h3>Fresh Cassava</h3>
+              <p class="product-location">Bugesera District</p>
+              <div class="product-details">
+                <span><strong>350 RWF</strong> / kg</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified cooperative</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/banana.jpeg" alt="Fresh Rwandan bananas">
+              <span class="product-category">Fruits</span>
+            </div>
+            <div class="product-content">
+              <h3>Fresh Bananas</h3>
+              <p class="product-location">Ngoma District</p>
+              <div class="product-details">
+                <span><strong>12,000 RWF</strong> / bunch</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified farmer</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/avocadoes.jpeg" alt="Fresh Rwandan avocados">
+              <span class="product-category">Fruits</span>
+            </div>
+            <div class="product-content">
+              <h3>Fresh Avocados</h3>
+              <p class="product-location">Rwamagana District</p>
+              <div class="product-details">
+                <span><strong>16,000 RWF</strong> / crate</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified farm</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img src="../image/chili pepper.jpeg" alt="Fresh Rwandan chili peppers">
+              <span class="product-category">Vegetables</span>
+            </div>
+            <div class="product-content">
+              <h3>Chili Peppers</h3>
+              <p class="product-location">Nyagatare District</p>
+              <div class="product-details">
+                <span><strong>1,200 RWF</strong> / kg</span>
+                <span>Available</span>
+              </div>
+              <p class="seller-name">Verified cooperative</p>
+              <a href="product-details.html" class="product-link">View Product</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section market-section" id="market-prices">
+      <div class="container market-layout">
+        <div class="market-introduction">
+          <span class="section-label light-label">Price transparency</span>
+          <h2>Make informed buying and selling decisions</h2>
+          <p>
+            Compare agricultural prices across districts and understand how
+            the market is changing before making a deal.
+          </p>
+          <a class="button button-light" href="market-prices.html">View Market Prices</a>
+        </div>
+
+        <div class="price-table-container">
+          <div class="price-table-heading">
+            <div>
+              <h3>Current market summary</h3>
+              <p>Example prices for demonstration</p>
+            </div>
+            <span class="update-label">Updated today</span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>District</th>
+                  <th>Current Price</th>
+                  <th>Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tomatoes</td>
+                  <td>Kigali</td>
+                  <td>600 RWF/kg</td>
+                  <td class="price-increase">Increased by 20</td>
+                </tr>
+                <tr>
+                  <td>Maize</td>
+                  <td>Huye</td>
+                  <td>420 RWF/kg</td>
+                  <td class="price-decrease">Decreased by 15</td>
+                </tr>
+                <tr>
+                  <td>Irish Potatoes</td>
+                  <td>Musanze</td>
+                  <td>350 RWF/kg</td>
+                  <td class="price-increase">Increased by 10</td>
+                </tr>
+                <tr>
+                  <td>Beans</td>
+                  <td>Nyagatare</td>
+                  <td>1,250 RWF/kg</td>
+                  <td class="stable-price">No change</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section advantages-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Built for agricultural trade</span>
+          <h2>Why buyers and farmers choose Agri-Link</h2>
+          <p>Every important marketplace activity is organized within one connected platform.</p>
+        </div>
+
+        <div class="advantages-grid">
+          <article class="advantage-card image-card image-one">
+            <div>
+              <span>01</span>
+              <h3>Direct market access</h3>
+              <p>Farmers reach buyers beyond their immediate location.</p>
+            </div>
+          </article>
+          <article class="advantage-card image-card image-two">
+            <div>
+              <span>02</span>
+              <h3>Transparent prices</h3>
+              <p>Users compare price information before making decisions.</p>
+            </div>
+          </article>
+          <article class="advantage-card image-card image-three">
+            <div>
+              <span>03</span>
+              <h3>Order and delivery support</h3>
+              <p>Track products from order acceptance to successful delivery.</p>
+            </div>
+          </article>
+          <article class="advantage-card image-card image-four">
+            <div>
+              <span>04</span>
+              <h3>Trusted participation</h3>
+              <p>Verification and reviews improve confidence between users.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container cta-container">
+        <div>
+          <span class="section-label light-label">Join Agri-Link</span>
+          <h2>Ready to participate in Rwanda's digital agricultural market?</h2>
+          <p>Choose how you want to use the platform and create your account.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-light" href="register.html">I Want to Buy</a>
+          <a class="button button-secondary" href="register.html">I Want to Sell</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-page" aria-label="Contact Agri-Link">
+      <div class="contact-hero">
+        <p class="contact-eyebrow">Get in touch</p>
+        <h1>Contact Agri-Link Rwanda</h1>
+        <p>We are here to help farmers, buyers, and partners build stronger connections across Rwanda's agricultural community.</p>
+      </div>
+
+      <div class="contact-cards">
+        <article class="contact-card contact-info">
+          <h2>Contact Details</h2>
+          <p><strong>Phone:</strong> +250 788759462</p>
+          <p><strong>Email:</strong> info@agri-link.rw</p>
+          <p><strong>Address:</strong> Nyarugenge, Kigali, Rwanda</p>
+          <p><strong>Working Hours:</strong> Mon - Fri, 8:00 AM - 5:00 PM</p>
+        </article>
+
+        <article class="contact-card support-info">
+          <h2>How we can help</h2>
+          <ul>
+            <li>Customer support and enquiries</li>
+            <li>Business partnerships</li>
+            <li>Farmer registration assistance</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="contact-social-section">
+        <h2>Follow us</h2>
+        <div class="contact-social-links">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <img src="../image/linkedin.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-fallback">
+            <span class="icon">f</span>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="social-fallback">
+            <span class="icon">t</span>
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-section">
+        <h2>Send a message</h2>
+        <form action="#" method="post">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <img src="../image/header.png" alt="Agri-Link logo">
         <p>
-          Through us you reach the actual buyer or farmer of any agricultural
-          product within a short time and make deals remotely.
-        </p>
-
-        <p>
-          Agri-Link simplifies logistics—improving delivery and connecting
-          farmers and buyers efficiently.
+          Connecting farmers and buyers through transparent agricultural trade,
+          reliable communication and organized delivery.
         </p>
       </div>
-      <a href="register.html" class="btn" target="_blank">Register to Get Started</a>
-    </div>
-  </section>
 
-  <section class="dealing">
-    <div class=" call&smas">
-      
-    </div>
-    <p> <b> <marquee direction="left" behavior="scroll" scrollamount="3">
-      connect with the farmer of any product you want via the mobile call or </br>
-       you may even sent a message to the farmer using the product owner contact </marquee> </b>
-      </p>
-
-
-  </section>
-  <section class="crops-description">
-    <h2><b>THIS IS THE CURRENT AVAILABLE CROPS READY FOR THE MARKET</b></h2>
-    <p>The bellow crops are the one ready now but not limited to this, in case you need any other different to this ones 
-    please reach out to us via the contact details <a href="#contact">Contact Us</a> we are here link you to the best quality<br/>
-     crops that match your demand</p>
-     <div class="crop1"> 
-       <div class="select"><h3>Rwandan rice</h3><img src="../image/rice.jpeg" alt="rice"></div>
-       <div class="select"><h3>Rwandan maize</h3><img src="../image/maize.jpeg" alt="maize"></div>
-       <div class="select"><h3>Rwandan cassava</h3><img src="../image/cassava.jpeg" alt="cassava"></div>
-       <div class="select"><h3>Rwandan Banana</h3><img src="../image/banana.jpeg" alt="banana"></div>
-       <div class="select"><h3>Rwandan avocado</h3><img src="../image/avocadoes.jpeg" alt="avocado"></div>
-       <div class="select"><h3>Rwandan Chili pepper</h3><img src="../image/chili pepper.jpeg" alt="chili pepper"></div>
+      <div>
+        <h3>Marketplace</h3>
+        <a href="marketplace.html">Browse Products</a>
+        <a href="market-prices.html">Market Prices</a>
+        <a href="register.html">Become a Seller</a>
+        <a href="register.html">Create Buyer Account</a>
       </div>
-  </section>
-    <footer>
-      <div class="footer-all">
-        <div>
-          <h3><b>More Information</b></h3>
-          <p><a href="register.html">Register Here</a></p>
-        </div>
-        <div>
-          <h3><b>About AGRI-LINK</b></h3>
-          <p>Connecting farmers and buyers for efficient agricultural trade</p>
-        </div>
-        <div>
-          <h3><b>Quick Links</b></h3>
-          <p><a href="#contact">Contact Us</a></p>
-        </div>
+
+      <div>
+        <h3>Agri-Link</h3>
+        <a href="about.html">About Us</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="help.html">Help Center</a>
       </div>
-    </footer>
+
+      <div>
+        <h3>Contact</h3>
+        <!-- Replace these demonstration details with official contacts. -->
+        <p>Kigali, Rwanda</p>
+        <p>Phone: +250 7XX XXX XXX</p>
+        <p>Email: info@agri-link.rw</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Agri-Link. All rights reserved.</p>
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

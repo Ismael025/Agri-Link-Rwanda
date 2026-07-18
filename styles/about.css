@@ -1,9 +1,10 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +13,42 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Who We Are & Why We Exist Section */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+}
+
+header.header .left {
+    display: flex;
+    align-items: center;
+}
+
+header.header .right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header.header .right a {
+    color: #f5fff4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+header.header .right a:hover {
+    color: #8fd59e;
+}
+
+.page-content{
+      padding-top: 120px;
+  min-height: 100vh;
+}
 .we_are_exist {
     display: flex;
     gap: 30px;
