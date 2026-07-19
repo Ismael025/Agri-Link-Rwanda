@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Manage agricultural products listed on Agri-Link.">
   <title>My Products | Agri-Link</title>
-  <link rel="stylesheet" href="../style codes/products.css">
+  
+  <link rel="stylesheet" href="../styles/products.css">
 </head>
 <body>
   <aside class="sidebar" id="sidebar">
@@ -33,7 +34,7 @@
       <a class="nav-link" href="profile.html"><span class="nav-icon">👤</span>Profile</a>
       <a class="nav-link" href="settings.html"><span class="nav-icon">⚙</span>Settings</a>
       <a class="nav-link" href="help.html"><span class="nav-icon">?</span>Help Center</a>
-      <a class="nav-link" href="#"><span class="nav-icon">↪</span>Logout</a>
+      <a class="nav-link" href="logout.html"><span class="nav-icon">↪</span>Logout</a>
     </nav>
   </aside>
 
@@ -48,10 +49,7 @@
       <div class="farmer">
         <button class="bell" aria-label="Notifications">🔔</button>
         <span class="avatar">IM</span>
-        <span class="farmer-info">
-          <strong>Ismael Farm</strong>
-          <small>Verified Farmer</small>
-        </span>
+        <span class="farmer-info"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
       </div>
     </header>
 
@@ -149,6 +147,7 @@
     </main>
   </div>
 
+  <!-- Add Product Form -->
   <div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="formTitle">
     <div class="modal-content">
       <div class="modal-header">
@@ -212,6 +211,7 @@
 
   <div class="message" id="message">Action completed.</div>
 
-  <script src="../Js/products.js"></script>
+  
+<script src="../scripts/products.js"></script>
 </body>
 </html>

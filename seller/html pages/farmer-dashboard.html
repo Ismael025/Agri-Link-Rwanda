@@ -5,64 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Agri-Link farmer dashboard for managing products, orders, payments, and market information.">
   <title>Farmer Dashboard | Agri-Link</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-  <link rel="stylesheet" href="../style codes/farmer-dashboard.css">
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="../styles/farmer-dashboard.css">
 </head>
 <body>
   <div class="app">
     <aside class="sidebar" id="sidebar">
       <a class="brand" href="farmer-dashboard.html" aria-label="Agri-Link farmer dashboard">
-        <span class="brand-mark"><i data-lucide="sprout"></i></span><span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+        <span class="brand-mark"><img class="local-icon" src="../icons/leaf.svg" alt=""></span><span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
       </a>
       <p class="nav-label">Workspace</p>
       <nav class="nav" aria-label="Seller navigation">
-        <a class="active" href="farmer-dashboard.html"><i data-lucide="layout-dashboard"></i>Dashboard</a>
-        <a href="products.html"><i data-lucide="package"></i>My Products</a>
-        <a href="orders.html"><i data-lucide="shopping-cart"></i>Orders<span class="badge">5</span></a>
-        <a href="buyers.html"><i data-lucide="users"></i>Buyers</a>
-        <a href="market-prices.html"><i data-lucide="chart-no-axes-combined"></i>Market Prices</a>
-        <a href="messages.html"><i data-lucide="message-square"></i>Messages<span class="badge">3</span></a>
-        <a href="analytics.html"><i data-lucide="chart-column"></i>Analytics</a>
-        <a href="reviews.html"><i data-lucide="star"></i>Reviews</a>
-        <a href="wallet.html"><i data-lucide="wallet-cards"></i>Wallet</a>
-        <a href="notifications.html"><i data-lucide="bell"></i>Notifications</a>
+        <a class="active" href="farmer-dashboard.html"><img class="local-icon" src="../icons/dashboard.svg" alt="">Dashboard</a>
+        <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">My Products</a>
+        <a href="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">Orders<span class="badge">5</span></a>
+        <a href="buyers.html"><img class="local-icon" src="../icons/farmer.svg" alt="">Buyers</a>
+        <a href="market-prices.html"><img class="local-icon" src="../icons/chart.svg" alt="">Market Prices</a>
+        <a href="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages<span class="badge">3</span></a>
+        <a href="analytics.html"><img class="local-icon" src="../icons/chart.svg" alt="">Analytics</a>
+        <a href="reviews.html"><img class="local-icon" src="../icons/star.svg" alt="">Reviews</a>
+        <a href="wallet.html"><img class="local-icon" src="../icons/payment.svg" alt="">Wallet</a>
+        <a href="notifications.html"><img class="local-icon" src="../icons/bell.svg" alt="">Notifications</a>
       </nav>
       <p class="nav-label">Account</p>
       <nav class="nav" aria-label="Account navigation">
-        <a href="profile.html"><i data-lucide="circle-user-round"></i>Profile</a>
-        <a href="settings.html"><i data-lucide="settings"></i>Settings</a>
-        <a href="help.html"><i data-lucide="circle-help"></i>Help Center</a>
+        <a href="profile.html"><img class="local-icon" src="../icons/user.svg" alt="">Profile</a>
+        <a href="settings.html"><img class="local-icon" src="../icons/settings.svg" alt="">Settings</a>
+        <a href="help.html"><img class="local-icon" src="../icons/help.svg" alt="">Help Center</a>
       </nav>
-      <div class="logout"><button type="button" data-action="logout"><i data-lucide="log-out"></i>Logout</button></div>
+      <div class="logout"><a href="logout.html"><button type="button"><img class="local-icon" src="../icons/logout.svg" alt="">Logout</button></a></div>
     </aside>
     <div class="overlay" data-action="close-nav"></div>
     <div class="main">
       <header class="topbar">
-        <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation" aria-controls="sidebar"><i data-lucide="menu"></i></button>
-        <label class="search"><i data-lucide="search"></i><input id="siteSearch" type="search" placeholder="Search products, orders, buyers..." aria-label="Search dashboard"></label>
+        <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation" aria-controls="sidebar"><img class="local-icon" src="../icons/menu.svg" alt=""></button>
+        <label class="search"><img class="local-icon" src="../icons/search.svg" alt=""><input id="siteSearch" type="search" placeholder="Search products, orders, buyers..." aria-label="Search dashboard"></label>
         <div class="user-area">
-          <button class="icon-btn" type="button" aria-label="Notifications" data-action="notify"><i data-lucide="bell"></i><span class="dot"></span></button>
+          <button class="icon-btn" type="button" aria-label="Notifications" data-action="notify"><img class="local-icon" src="../icons/bell.svg" alt=""><span class="dot"></span></button>
           <span class="avatar" aria-hidden="true">IM</span><span class="user-copy"><strong>Ismael Farm</strong><span>Verified Farmer</span></span>
-          <button class="icon-btn" type="button" aria-label="Open profile menu" data-action="profile"><i data-lucide="chevron-down"></i></button>
+          <button class="icon-btn" type="button" aria-label="Open profile menu" data-action="profile"><img class="local-icon" src="../icons/chevron-down.svg" alt=""></button>
         </div>
       </header>
       <main>
         <section class="welcome">
-          <div><h1>Good morning, Ismael 👋</h1><p>Here is what is happening with your farm business today.</p></div>
-          <div class="date-pill"><i data-lucide="calendar-days"></i><span id="currentDate">Friday, 17 July 2026</span></div>
+          <div><h1>Good morning, Ismael</h1><p>Here is what is happening with your farm business today.</p></div>
+          <div class="date-pill"><img class="local-icon" src="../icons/calendar.svg" alt=""><span id="currentDate">Friday, 17 July 2026</span></div>
         </section>
         <section class="stats" aria-label="Business overview">
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="package"></i></span><span class="trend">+2 this week</span></div><h2>24</h2><p>Total Products</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="badge-check"></i></span><span class="trend">83% listed</span></div><h2>20</h2><p>Active Products</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="shopping-bag"></i></span><span class="trend">+12.5%</span></div><h2>38</h2><p>Orders Received</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="circle-check-big"></i></span><span class="trend">+8.2%</span></div><h2>29</h2><p>Orders Completed</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="banknote"></i></span><span class="trend">+18.4%</span></div><h2>1.24M RWF</h2><p>Total Revenue</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="clock-3"></i></span><span class="trend neutral">3 payments</span></div><h2>186K RWF</h2><p>Pending Payments</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="eye"></i></span><span class="trend">+21.6%</span></div><h2>2,846</h2><p>Product Views</p></article>
-          <article class="stat"><div class="stat-top"><span class="stat-icon"><i data-lucide="star"></i></span><span class="trend">Excellent</span></div><h2>4.8 / 5</h2><p>Average Rating</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/box.svg" alt=""></span><span class="trend">+2 this week</span></div><h2>24</h2><p>Total Products</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/check.svg" alt=""></span><span class="trend">83% listed</span></div><h2>20</h2><p>Active Products</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/basket.svg" alt=""></span><span class="trend">+12.5%</span></div><h2>38</h2><p>Orders Received</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/check.svg" alt=""></span><span class="trend">+8.2%</span></div><h2>29</h2><p>Orders Completed</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/money.svg" alt=""></span><span class="trend">+18.4%</span></div><h2>1.24M RWF</h2><p>Total Revenue</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/clock.svg" alt=""></span><span class="trend neutral">3 payments</span></div><h2>186K RWF</h2><p>Pending Payments</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/eye.svg" alt=""></span><span class="trend">+21.6%</span></div><h2>2,846</h2><p>Product Views</p></article>
+          <article class="stat"><div class="stat-top"><span class="stat-icon"><img class="local-icon" src="../icons/star.svg" alt=""></span><span class="trend">Excellent</span></div><h2>4.8 / 5</h2><p>Average Rating</p></article>
         </section>
         <div class="grid">
           <div class="column">
@@ -78,21 +79,21 @@
             <section class="panel">
               <div class="panel-head"><h2>Market Price Summary</h2><a href="market-prices.html">Explore market →</a></div>
               <div class="prices">
-                <article class="price"><div class="price-top"><span class="crop"><span class="crop-icon">🍅</span>Tomatoes</span><span class="change">↑ 20</span></div><h3>600 RWF/kg</h3><small>Kigali • Updated today</small><div class="mini-bars"><i style="height:35%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:65%"></i><i style="height:72%"></i><i style="height:90%"></i></div></article>
-                <article class="price"><div class="price-top"><span class="crop"><span class="crop-icon">🌽</span>Maize</span><span class="change down">↓ 15</span></div><h3>420 RWF/kg</h3><small>Huye • Updated today</small><div class="mini-bars"><i style="height:82%"></i><i style="height:76%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:69%"></i><i style="height:55%"></i></div></article>
-                <article class="price"><div class="price-top"><span class="crop"><span class="crop-icon">🥔</span>Potatoes</span><span class="change">↑ 10</span></div><h3>350 RWF/kg</h3><small>Musanze • Updated today</small><div class="mini-bars"><i style="height:40%"></i><i style="height:53%"></i><i style="height:47%"></i><i style="height:68%"></i><i style="height:65%"></i><i style="height:78%"></i></div></article>
+                <article class="price"><div class="price-top"><span class="crop"><img class="crop-local-icon" src="../icons/tomato.svg" alt="">Tomatoes</span><span class="change">↑ 20</span></div><h3>600 RWF/kg</h3><small>Kigali • Updated today</small><div class="mini-bars"><i class="farmer-dashboard-style-1"></i><i class="farmer-dashboard-style-2"></i><i class="farmer-dashboard-style-3"></i><i class="farmer-dashboard-style-4"></i><i class="farmer-dashboard-style-5"></i><i class="farmer-dashboard-style-6"></i></div></article>
+                <article class="price"><div class="price-top"><span class="crop"><img class="crop-local-icon" src="../icons/maize.svg" alt="">Maize</span><span class="change down">↓ 15</span></div><h3>420 RWF/kg</h3><small>Huye • Updated today</small><div class="mini-bars"><i class="farmer-dashboard-style-7"></i><i class="farmer-dashboard-style-8"></i><i class="farmer-dashboard-style-9"></i><i class="farmer-dashboard-style-10"></i><i class="farmer-dashboard-style-11"></i><i class="farmer-dashboard-style-12"></i></div></article>
+                <article class="price"><div class="price-top"><span class="crop"><img class="crop-local-icon" src="../icons/potato.svg" alt="">Potatoes</span><span class="change">↑ 10</span></div><h3>350 RWF/kg</h3><small>Musanze • Updated today</small><div class="mini-bars"><i class="farmer-dashboard-style-13"></i><i class="farmer-dashboard-style-14"></i><i class="farmer-dashboard-style-15"></i><i class="farmer-dashboard-style-16"></i><i class="farmer-dashboard-style-17"></i><i class="farmer-dashboard-style-18"></i></div></article>
               </div>
             </section>
           </div>
           <aside class="column">
             <section class="panel"><div class="panel-head"><h2>Quick Actions</h2></div><div class="quick">
-              <button class="action primary" data-target="products.html"><i data-lucide="plus"></i>Add Product</button><button class="action" data-target="orders.html"><i data-lucide="shopping-cart"></i>View Orders</button><button class="action" data-target="messages.html"><i data-lucide="message-square"></i>Messages</button><button class="action" data-target="products.html"><i data-lucide="refresh-cw"></i>Update Stock</button>
+              <button class="action primary" data-target="products.html"><img class="local-icon" src="../icons/plus.svg" alt="">Add Product</button><button class="action" data-target="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">View Orders</button><button class="action" data-target="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages</button><button class="action" data-target="products.html"><img class="local-icon" src="../icons/refresh.svg" alt="">Update Stock</button>
             </div></section>
             <section class="panel"><div class="panel-head"><h2>Latest Notifications</h2><a href="notifications.html">View all</a></div><div class="notifications">
-              <article class="notice"><span class="notice-icon"><i data-lucide="shopping-bag"></i></span><div class="notice-copy"><strong>New order received</strong><p>Amahoro Kitchen ordered 120 kg tomatoes.</p></div><time>5m</time></article>
-              <article class="notice"><span class="notice-icon"><i data-lucide="badge-check"></i></span><div class="notice-copy"><strong>Payment completed</strong><p>96,000 RWF was added to your wallet.</p></div><time>1h</time></article>
-              <article class="notice"><span class="notice-icon"><i data-lucide="circle-check"></i></span><div class="notice-copy"><strong>Product approved</strong><p>Your avocado listing is now visible.</p></div><time>3h</time></article>
-              <article class="notice"><span class="notice-icon"><i data-lucide="message-square"></i></span><div class="notice-copy"><strong>New buyer message</strong><p>City Supermarket asked about delivery.</p></div><time>5h</time></article>
+              <article class="notice"><span class="notice-icon"><img class="local-icon" src="../icons/basket.svg" alt=""></span><div class="notice-copy"><strong>New order received</strong><p>Amahoro Kitchen ordered 120 kg tomatoes.</p></div><time>5m</time></article>
+              <article class="notice"><span class="notice-icon"><img class="local-icon" src="../icons/check.svg" alt=""></span><div class="notice-copy"><strong>Payment completed</strong><p>96,000 RWF was added to your wallet.</p></div><time>1h</time></article>
+              <article class="notice"><span class="notice-icon"><img class="local-icon" src="../icons/check.svg" alt=""></span><div class="notice-copy"><strong>Product approved</strong><p>Your avocado listing is now visible.</p></div><time>3h</time></article>
+              <article class="notice"><span class="notice-icon"><img class="local-icon" src="../icons/message.svg" alt=""></span><div class="notice-copy"><strong>New buyer message</strong><p>City Supermarket asked about delivery.</p></div><time>5h</time></article>
             </div></section>
           </aside>
         </div>
@@ -100,6 +101,7 @@
     </div>
   </div>
   <div class="toast" role="status" aria-live="polite"></div>
-  <script src="../Js/farmer-dashboard.js"></script>
+  
+<script src="../scripts/farmer-dashboard.js"></script>
 </body>
 </html>
