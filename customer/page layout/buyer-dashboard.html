@@ -1,37 +1,657 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>Buyer Dashboard | Agri-Link</title>
+
     <link rel="stylesheet" href="../styles/buyer-dashboard.css">
 </head>
+
 <body>
-<aside class="sidebar">
-    <a class="logo" href="buyer-dashboard.html">
-        <span class="logo-mark">🌱</span>
-        <span><strong>Agri-Link</strong><small>Buyer Portal</small></span>
-   </a>
-   <p class="nav-title">Marketplace</p>
- <nav>
-     <a class="nav-link active" href="buyer-dashboard.html">▦ Dashboard</a>
-     <a class="nav-link" href="marketplace.html">🛍 Browse Products</a>
-     <a class="nav-link" href="cart.html">🛒 My Cart<span class="nav-badge" id="cartCount">3</span></a>
-     <a class="nav-link" href="buyer-orders.html">📦 My Orders</a>
-     <a class="nav-link" href="tracking.html">🚚 Track Delivery</a>
-     <a class="nav-link" href="farmers.html">👨‍🌾 Farmers</a>
-     <a class="nav-link" href="saved-products.html">♥ Saved Products</a>
-     <a class="nav-link" href="buyer-messages.html">💬 Messages<span class="nav-badge">2</span></a>
-     <a class="nav-link" href="buyer-market-prices.html">📈 Market Prices</a>
-     <a class="nav-link" href="buyer-payments.html">💳 Payments</a>
-     <a class="nav-link" href="buyer-reviews.html">⭐ My Reviews</a>
-     <a class="nav-link" href="buyer-notifications.html">🔔 Notifications</a>
-   </nav>
-    <p class="nav-title">Account</p><nav><a class="nav-link" href="buyer-profile.html">👤 Profile</a><a class="nav-link" href="buyer-settings.html">⚙ Settings</a><a class="nav-link" href="buyer-help.html">❓ Help Center</a><a class="nav-link" href="buyer-logout.html">↪ Logout</a></nav></aside><div class="overlay" id="overlay"></div>
-<div class="page"><header class="topbar"><button class="menu-btn" id="menuButton">☰</button><div class="global-search"><input placeholder="Search products, farmers or categories..."></div><div class="account"><a class="icon-btn" href="cart.html">🛒</a><a class="icon-btn" href="buyer-notifications.html">🔔</a><span class="avatar">AN</span><span class="account-copy"><strong>Aline N.</strong><small>Verified Buyer</small></span></div></header><main class="content">
-<section class="buyer-hero"><div><h1>Fresh produce, directly from trusted farmers</h1><p>Discover quality agricultural products, compare transparent prices and order from farmers across Rwanda.</p><form class="hero-search" action="marketplace.html"><input name="search" placeholder="What agricultural product do you need?"><button class="button">Search Marketplace</button></form></div><div class="hero-art">🧺</div></section>
-<section class="stats"><article class="stat"><span class="stat-icon">📦</span><div><strong>8</strong><span>Total Orders</span></div></article><article class="stat"><span class="stat-icon">🚚</span><div><strong>2</strong><span>Active Deliveries</span></div></article><article class="stat"><span class="stat-icon">♥</span><div><strong>12</strong><span>Saved Products</span></div></article><article class="stat"><span class="stat-icon">💰</span><div><strong>486K RWF</strong><span>Total Purchases</span></div></article></section>
-<section class="panel"><div class="panel-head"><h2>Shop by Category</h2><a href="marketplace.html" class="buyer-dashboard-style-1">View all products →</a></div><div class="panel-body"><div class="category-row"><a class="category-card" href="marketplace.html"><span>🥬</span>Vegetables</a><a class="category-card" href="marketplace.html"><span>🍍</span>Fruits</a><a class="category-card" href="marketplace.html"><span>🌾</span>Grains</a><a class="category-card" href="marketplace.html"><span>🥔</span>Tubers</a><a class="category-card" href="marketplace.html"><span>🫘</span>Legumes</a><a class="category-card" href="marketplace.html"><span>🥛</span>Dairy</a></div></div></section>
-<section class="panel"><div class="panel-head"><div><h2>Recommended Products</h2><p>Quality products selected from verified farmers</p></div><a href="marketplace.html" class="buyer-dashboard-style-2">Browse marketplace →</a></div><div class="panel-body"><div class="product-grid"><article class="product-card"><button class="favorite">♡</button><div class="product-photo">🍅</div><div class="product-info"><span class="verified">✓ Verified Farmer</span><h3>Fresh Tomatoes</h3><p>Ismael Farm • Rusizi • 480 kg available</p><div class="product-price"><strong>600 RWF/kg</strong><span class="stars">★★★★★</span></div><div class="product-actions"><a class="button small" href="product-details.html">Details</a><button class="button small primary add-cart">Add to Cart</button></div></div></article><article class="product-card"><button class="favorite">♡</button><div class="product-photo">🌽</div><div class="product-info"><span class="verified">✓ Verified Farmer</span><h3>Yellow Maize</h3><p>Ubumwe Cooperative • Huye • 80 bags</p><div class="product-price"><strong>21,000 RWF/bag</strong><span class="stars">★★★★★</span></div><div class="product-actions"><a class="button small" href="product-details.html">Details</a><button class="button small primary add-cart">Add to Cart</button></div></div></article><article class="product-card"><button class="favorite">♡</button><div class="product-photo">🥔</div><div class="product-info"><span class="verified">✓ Verified Farmer</span><h3>Irish Potatoes</h3><p>Virunga Harvest • Musanze • 650 kg</p><div class="product-price"><strong>350 RWF/kg</strong><span class="stars">★★★★☆</span></div><div class="product-actions"><a class="button small" href="product-details.html">Details</a><button class="button small primary add-cart">Add to Cart</button></div></div></article><article class="product-card"><button class="favorite">♡</button><div class="product-photo">🥑</div><div class="product-info"><span class="verified">✓ Verified Farmer</span><h3>Fresh Avocados</h3><p>Green Valley Farm • Rwamagana • 28 crates</p><div class="product-price"><strong>16,000 RWF/crate</strong><span class="stars">★★★★★</span></div><div class="product-actions"><a class="button small" href="product-details.html">Details</a><button class="button small primary add-cart">Add to Cart</button></div></div></article></div></div></section>
-<div class="two-col buyer-dashboard-style-3"><section class="panel"><div class="panel-head"><h2>Active Orders</h2><a href="buyer-orders.html" class="buyer-dashboard-style-4">View all →</a></div><div class="order-card"><div class="order-top"><div class="order-products"><span class="order-product-image">🍅</span><div><h3>Fresh Tomatoes • 120 kg</h3><p>Order #AGR-1048 • Ismael Farm</p></div></div><span class="status blue">Preparing</span></div><div class="steps"><span class="step done"><i></i>Ordered</span><span class="step done"><i></i>Accepted</span><span class="step current"><i></i>Preparing</span><span class="step"><i></i>Delivery</span><span class="step"><i></i>Delivered</span></div></div></section><section class="panel"><div class="panel-head"><h2>Latest Updates</h2><a href="buyer-notifications.html" class="buyer-dashboard-style-5">View all →</a></div><div class="panel-body"><div class="list-item"><span class="list-icon">✓</span><div class="list-copy"><strong>Order accepted</strong><p>Ismael Farm accepted order #AGR-1048.</p><small>20 minutes ago</small></div></div><div class="list-item"><span class="list-icon">📈</span><div class="list-copy"><strong>Tomato price update</strong><p>Average Kigali price increased to 600 RWF/kg.</p><small>2 hours ago</small></div></div><div class="list-item"><span class="list-icon">💬</span><div class="list-copy"><strong>New farmer message</strong><p>Your delivery time has been confirmed.</p><small>3 hours ago</small></div></div></div></section></div>
-</main></div><div class="toast" id="toast"></div><script src="../scripts/buyer-dashboard.js"></script></body></html>
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <a class="logo" href="buyer-dashboard.html">
+            <span class="logo-mark">🌱</span>
+
+            <span>
+                <strong>Agri-Link</strong>
+                <small>Buyer Portal</small>
+            </span>
+        </a>
+
+        <!-- Marketplace Navigation -->
+        <p class="nav-title">Marketplace</p>
+
+        <nav>
+            <a class="nav-link active" href="buyer-dashboard.html">
+                ▦ Dashboard
+            </a>
+
+            <a class="nav-link" href="marketplace.html">
+                🛍 Browse Products
+            </a>
+
+            <a class="nav-link" href="cart.html">
+                🛒 My Cart
+                <span class="nav-badge" id="cartCount">3</span>
+            </a>
+
+            <a class="nav-link" href="buyer-orders.html">
+                📦 My Orders
+            </a>
+
+            <a class="nav-link" href="tracking.html">
+                🚚 Track Delivery
+            </a>
+
+            <a class="nav-link" href="farmers.html">
+                👨‍🌾 Farmers
+            </a>
+
+            <a class="nav-link" href="saved-products.html">
+                ♥ Saved Products
+            </a>
+
+            <a class="nav-link" href="buyer-messages.html">
+                💬 Messages
+                <span class="nav-badge">2</span>
+            </a>
+
+            <a class="nav-link" href="buyer-market-prices.html">
+                📈 Market Prices
+            </a>
+
+            <a class="nav-link" href="buyer-payments.html">
+                💳 Payments
+            </a>
+
+            <a class="nav-link" href="buyer-reviews.html">
+                ⭐ My Reviews
+            </a>
+
+            <a class="nav-link" href="buyer-notifications.html">
+                🔔 Notifications
+            </a>
+        </nav>
+
+        <!-- Account Navigation -->
+        <p class="nav-title">Account</p>
+
+        <nav>
+            <a class="nav-link" href="buyer-profile.html">
+                👤 Profile
+            </a>
+
+            <a class="nav-link" href="buyer-settings.html">
+                ⚙ Settings
+            </a>
+
+            <a class="nav-link" href="buyer-help.html">
+                ❓ Help Center
+            </a>
+
+            <a class="nav-link" href="buyer-logout.html">
+                ↪ Logout
+            </a>
+        </nav>
+
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <div class="page">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuButton">
+                ☰
+            </button>
+
+            <div class="global-search">
+                <input placeholder="Search products, farmers or categories...">
+            </div>
+
+            <div class="account">
+
+                <a class="icon-btn" href="cart.html">
+                    🛒
+                </a>
+
+                <a class="icon-btn" href="buyer-notifications.html">
+                    🔔
+                </a>
+
+                <span class="avatar">
+                    AN
+                </span>
+
+                <span class="account-copy">
+                    <strong>Aline N.</strong>
+                    <small>Verified Buyer</small>
+                </span>
+
+            </div>
+
+        </header>
+
+        <main class="content">
+
+            <!-- Buyer Hero Section -->
+            <section class="buyer-hero">
+
+                <div>
+                    <h1>
+                        Fresh produce, directly from trusted farmers
+                    </h1>
+
+                    <p>
+                        Discover quality agricultural products, compare transparent
+                        prices and order from farmers across Rwanda.
+                    </p>
+
+                    <form class="hero-search" action="marketplace.html">
+                        <input
+                            name="search"
+                            placeholder="What agricultural product do you need?"
+                        >
+
+                        <button class="button">
+                            Search Marketplace
+                        </button>
+                    </form>
+                </div>
+
+                <div class="hero-art">
+                    🧺
+                </div>
+
+            </section>
+
+
+            <!-- Statistics Section -->
+            <section class="stats">
+
+                <article class="stat">
+                    <span class="stat-icon">📦</span>
+
+                    <div>
+                        <strong>8</strong>
+                        <span>Total Orders</span>
+                    </div>
+                </article>
+
+                <article class="stat">
+                    <span class="stat-icon">🚚</span>
+
+                    <div>
+                        <strong>2</strong>
+                        <span>Active Deliveries</span>
+                    </div>
+                </article>
+
+                <article class="stat">
+                    <span class="stat-icon">♥</span>
+
+                    <div>
+                        <strong>12</strong>
+                        <span>Saved Products</span>
+                    </div>
+                </article>
+
+                <article class="stat">
+                    <span class="stat-icon">💰</span>
+
+                    <div>
+                        <strong>486K RWF</strong>
+                        <span>Total Purchases</span>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <!-- Shop by Category Section -->
+            <section class="panel">
+
+                <div class="panel-head">
+                    <h2>Shop by Category</h2>
+
+                    <a
+                        href="marketplace.html"
+                        class="buyer-dashboard-style-1"
+                    >
+                        View all products →
+                    </a>
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="category-row">
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🥬</span>
+                            Vegetables
+                        </a>
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🍍</span>
+                            Fruits
+                        </a>
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🌾</span>
+                            Grains
+                        </a>
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🥔</span>
+                            Tubers
+                        </a>
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🫘</span>
+                            Legumes
+                        </a>
+
+                        <a class="category-card" href="marketplace.html">
+                            <span>🥛</span>
+                            Dairy
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="panel">
+
+                <div class="panel-head">
+
+                    <div>
+                        <h2>Recommended Products</h2>
+
+                        <p>
+                            Quality products selected from verified farmers
+                        </p>
+                    </div>
+
+                    <a
+                        href="marketplace.html"
+                        class="buyer-dashboard-style-2"
+                    >
+                        Browse marketplace →
+                    </a>
+
+                </div>
+
+                <div class="panel-body">
+
+                    <div class="product-grid">
+
+                        <!-- Fresh Tomatoes -->
+                        <article class="product-card">
+
+                            <button class="favorite">
+                                ♡
+                            </button>
+
+                            <div class="product-photo">
+                                🍅
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="verified">
+                                    ✓ Verified Farmer
+                                </span>
+
+                                <h3>Fresh Tomatoes</h3>
+
+                                <p>
+                                    Ismael Farm • Rusizi • 480 kg available
+                                </p>
+
+                                <div class="product-price">
+                                    <strong>600 RWF/kg</strong>
+                                    <span class="stars">★★★★★</span>
+                                </div>
+
+                                <div class="product-actions">
+
+                                    <a
+                                        class="button small"
+                                        href="product-details.html"
+                                    >
+                                        Details
+                                    </a>
+
+                                    <button class="button small primary add-cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Yellow Maize -->
+                        <article class="product-card">
+
+                            <button class="favorite">
+                                ♡
+                            </button>
+
+                            <div class="product-photo">
+                                🌽
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="verified">
+                                    ✓ Verified Farmer
+                                </span>
+
+                                <h3>Yellow Maize</h3>
+
+                                <p>
+                                    Ubumwe Cooperative • Huye • 80 bags
+                                </p>
+
+                                <div class="product-price">
+                                    <strong>21,000 RWF/bag</strong>
+                                    <span class="stars">★★★★★</span>
+                                </div>
+
+                                <div class="product-actions">
+
+                                    <a
+                                        class="button small"
+                                        href="product-details.html"
+                                    >
+                                        Details
+                                    </a>
+
+                                    <button class="button small primary add-cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Irish Potatoes -->
+                        <article class="product-card">
+
+                            <button class="favorite">
+                                ♡
+                            </button>
+
+                            <div class="product-photo">
+                                🥔
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="verified">
+                                    ✓ Verified Farmer
+                                </span>
+
+                                <h3>Irish Potatoes</h3>
+
+                                <p>
+                                    Virunga Harvest • Musanze • 650 kg
+                                </p>
+
+                                <div class="product-price">
+                                    <strong>350 RWF/kg</strong>
+                                    <span class="stars">★★★★☆</span>
+                                </div>
+
+                                <div class="product-actions">
+
+                                    <a
+                                        class="button small"
+                                        href="product-details.html"
+                                    >
+                                        Details
+                                    </a>
+
+                                    <button class="button small primary add-cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- Fresh Avocados -->
+                        <article class="product-card">
+
+                            <button class="favorite">
+                                ♡
+                            </button>
+
+                            <div class="product-photo">
+                                🥑
+                            </div>
+
+                            <div class="product-info">
+
+                                <span class="verified">
+                                    ✓ Verified Farmer
+                                </span>
+
+                                <h3>Fresh Avocados</h3>
+
+                                <p>
+                                    Green Valley Farm • Rwamagana • 28 crates
+                                </p>
+
+                                <div class="product-price">
+                                    <strong>16,000 RWF/crate</strong>
+                                    <span class="stars">★★★★★</span>
+                                </div>
+
+                                <div class="product-actions">
+
+                                    <a
+                                        class="button small"
+                                        href="product-details.html"
+                                    >
+                                        Details
+                                    </a>
+
+                                    <button class="button small primary add-cart">
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Active Orders and Latest Updates -->
+            <div class="two-col buyer-dashboard-style-3">
+
+                <!-- Active Orders Section -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <h2>Active Orders</h2>
+
+                        <a
+                            href="buyer-orders.html"
+                            class="buyer-dashboard-style-4"
+                        >
+                            View all →
+                        </a>
+                    </div>
+
+                    <div class="order-card">
+
+                        <div class="order-top">
+
+                            <div class="order-products">
+
+                                <span class="order-product-image">
+                                    🍅
+                                </span>
+
+                                <div>
+                                    <h3>Fresh Tomatoes • 120 kg</h3>
+
+                                    <p>
+                                        Order #AGR-1048 • Ismael Farm
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <span class="status blue">
+                                Preparing
+                            </span>
+
+                        </div>
+
+                        <div class="steps">
+
+                            <span class="step done">
+                                <i></i>
+                                Ordered
+                            </span>
+
+                            <span class="step done">
+                                <i></i>
+                                Accepted
+                            </span>
+
+                            <span class="step current">
+                                <i></i>
+                                Preparing
+                            </span>
+
+                            <span class="step">
+                                <i></i>
+                                Delivery
+                            </span>
+
+                            <span class="step">
+                                <i></i>
+                                Delivered
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Latest Updates Section -->
+                <section class="panel">
+
+                    <div class="panel-head">
+                        <h2>Latest Updates</h2>
+
+                        <a
+                            href="buyer-notifications.html"
+                            class="buyer-dashboard-style-5"
+                        >
+                            View all →
+                        </a>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <div class="list-item">
+
+                            <span class="list-icon">
+                                ✓
+                            </span>
+
+                            <div class="list-copy">
+                                <strong>Order accepted</strong>
+
+                                <p>
+                                    Ismael Farm accepted order #AGR-1048.
+                                </p>
+
+                                <small>20 minutes ago</small>
+                            </div>
+
+                        </div>
+
+                        <div class="list-item">
+
+                            <span class="list-icon">
+                                📈
+                            </span>
+
+                            <div class="list-copy">
+                                <strong>Tomato price update</strong>
+
+                                <p>
+                                    Average Kigali price increased to 600 RWF/kg.
+                                </p>
+
+                                <small>2 hours ago</small>
+                            </div>
+
+                        </div>
+
+                        <div class="list-item">
+
+                            <span class="list-icon">
+                                💬
+                            </span>
+
+                            <div class="list-copy">
+                                <strong>New farmer message</strong>
+
+                                <p>
+                                    Your delivery time has been confirmed.
+                                </p>
+
+                                <small>3 hours ago</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="../scripts/buyer-dashboard.js"></script>
+
+</body>
+</html>
