@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compare agricultural market prices across districts through Agri-Link.">
+    <title>Market Prices | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/market-prices.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <a class="logo" href="index.html">
+          <img src="../image/header.png" alt="Agri-Link logo">
+        </a>
+        <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+        <label class="menu-button" for="menu-checkbox" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="marketplace.html">Marketplace</a>
+          <a class="active" href="market-prices.html">Market Prices</a>
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="about.html">About Us</a>
+          <a href="index.html#contact-us">Contact us</a>
+          <a class="login-link" href="login.html">Login</a>
+          <a class="header-cta" href="register.html">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Transparent agricultural market prices</h1>
+          <p>Compare indicative prices across districts to support fair negotiations and better buying and selling decisions.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="price-summary">
+            <article class="summary-card">
+              <strong>30</strong>
+              <span>Districts planned for coverage</span>
+            </article>
+            <article class="summary-card">
+              <strong>48</strong>
+              <span>Products planned for tracking</span>
+            </article>
+            <article class="summary-card">
+              <strong>Daily</strong>
+              <span>Price information updates</span>
+            </article>
+            <article class="summary-card">
+              <strong>RWF</strong>
+              <span>Prices shown in local currency</span>
+            </article>
+          </div>
+
+          <div class="table-card">
+            <div class="table-heading">
+              <div>
+                <h2>Current market summary</h2>
+                <p>Demonstration data for the front-end design</p>
+              </div>
+              <span class="updated">Example update: today</span>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>District</th>
+                    <th>Current Price</th>
+                    <th>Weekly Average</th>
+                    <th>Highest</th>
+                    <th>Lowest</th>
+                    <th>Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tomatoes</td>
+                    <td>Vegetables</td>
+                    <td>Kigali</td>
+                    <td><strong>600 RWF/kg</strong></td>
+                    <td>575 RWF</td>
+                    <td>640 RWF</td>
+                    <td>530 RWF</td>
+                    <td class="increase">Increased by 20</td>
+                  </tr>
+                  <tr>
+                    <td>Maize</td>
+                    <td>Grains</td>
+                    <td>Huye</td>
+                    <td><strong>420 RWF/kg</strong></td>
+                    <td>438 RWF</td>
+                    <td>470 RWF</td>
+                    <td>410 RWF</td>
+                    <td class="decrease">Decreased by 15</td>
+                  </tr>
+                  <tr>
+                    <td>Irish Potatoes</td>
+                    <td>Tubers</td>
+                    <td>Musanze</td>
+                    <td><strong>350 RWF/kg</strong></td>
+                    <td>342 RWF</td>
+                    <td>380 RWF</td>
+                    <td>320 RWF</td>
+                    <td class="increase">Increased by 10</td>
+                  </tr>
+                  <tr>
+                    <td>Beans</td>
+                    <td>Legumes</td>
+                    <td>Nyagatare</td>
+                    <td><strong>1,250 RWF/kg</strong></td>
+                    <td>1,215 RWF</td>
+                    <td>1,300 RWF</td>
+                    <td>1,180 RWF</td>
+                    <td class="increase">Increased by 30</td>
+                  </tr>
+                  <tr>
+                    <td>Bananas</td>
+                    <td>Fruits</td>
+                    <td>Rusizi</td>
+                    <td><strong>520 RWF/kg</strong></td>
+                    <td>518 RWF</td>
+                    <td>550 RWF</td>
+                    <td>490 RWF</td>
+                    <td class="stable">No change</td>
+                  </tr>
+                  <tr>
+                    <td>Cassava</td>
+                    <td>Tubers</td>
+                    <td>Bugesera</td>
+                    <td><strong>350 RWF/kg</strong></td>
+                    <td>345 RWF</td>
+                    <td>370 RWF</td>
+                    <td>325 RWF</td>
+                    <td class="stable">No change</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="price-explanation">
+            <article class="info-card">
+              <span class="info-number">01</span>
+              <h3>Data collection</h3>
+              <p>Authorized platform administrators or approved market-data partners collect price information from supported markets.</p>
+            </article>
+            <article class="info-card">
+              <span class="info-number">02</span>
+              <h3>Review and publication</h3>
+              <p>Prices should be checked for date, district, product, unit and reliability before they are published.</p>
+            </article>
+            <article class="info-card">
+              <span class="info-number">03</span>
+              <h3>Price guidance</h3>
+              <p>Market prices guide negotiations. The final agreed price may still depend on quality, quantity, location and delivery.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-content">
+          <div>
+            <h2>Found a suitable market price?</h2>
+            <p>Explore available listings and compare verified farmers.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button" href="marketplace.html">Browse Marketplace</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="simple-footer">
+      <div class="container footer-row">
+        <p>&copy; 2026 Agri-Link. Demonstration prices must be replaced with verified data.</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="help.html">Help</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

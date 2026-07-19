@@ -15,11 +15,12 @@
 </a>
     </div>
     <nav class="right">
-      <a href="index.html">Home</a>
-      <a href="about.html">Aboutus </a>
-      <a href="contact.html">Contact us</a>
-      <a href="login.html">Login</a>
-      <a href="register.html">Register</a>
+       <a class="active" href="index.html">Home</a>
+        <a href="marketplace.html">Marketplace</a>
+        <a href="market-prices.html">Market Prices</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="about.html">About Us</a>
+      <a href="index.html#contact-us">Contact us</a>
     </nav>
   </header>
 
@@ -45,7 +46,7 @@
       </div>
 
       <div class="login-form-wrapper">
-        <form class="login-form" action="../seller/html pages/farmer-dashboard.html" method="GET">
+        <form id="loginForm" class="login-form" method="GET">
           <h2>Login to get Started</h2>
           <p>Sign in to your account to manage listings, connect with farmers, and grow your trade.</p>
           <div class="form-group">
@@ -75,5 +76,6 @@
       </div>
     </section>
   </main>
+  <script src="../scripts/login.js"></script>
 </body>
 </html>
