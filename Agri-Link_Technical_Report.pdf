@@ -1,0 +1,346 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 2
+/Kids [ 4 0 R 12 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 3707
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 78 741.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL 1.144795 0 Td (AGRI-LINK DIGITAL MARKET ACCESS PLATFORM) Tj T* -1.144795 0 Td ET
+Q
+Q
+q
+1 0 0 1 78 711.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Technical Report \(Draft\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 681.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Prepared following the structure of the provided sample report. This draft begins from the) Tj T* (equivalent of page two of the sample template.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 669.8898 cm
+Q
+q
+1 0 0 1 78 639.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Table of Contents) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 621.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\177 Chapter 1. Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 603.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\177 Chapter 2. System Analysis and Design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 585.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\177 Chapter 3. Implementation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 567.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (\177 Chapter 4. Conclusion and Recommendations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 555.8898 cm
+Q
+q
+1 0 0 1 78 533.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL (Chapter 1. Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 491.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL (Agri-Link is a digital agricultural marketplace designed to connect farmers directly with buyers) Tj T* (across Rwanda. It provides product listings, market prices, communication, and lays the foundation) Tj T* (for future payment, logistics, analytics, and notification services.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 461.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Problem Statement) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 431.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Farmers have limited access to reliable markets while buyers struggle to locate trusted suppliers) Tj T* (and current market prices.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 401.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Objectives) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 371.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Connect farmers and buyers, improve price transparency, simplify ordering, and support future) Tj T* (digital agricultural services.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 341.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Expected Outcomes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 311.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL -0.079492 Tw (Improved market access, increased farmer income, better product visibility, and efficient agricultural) Tj T* 0 Tw (trade.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 281.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (Project Rationale) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 251.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL (Support Rwanda's digital transformation by strengthening agricultural commerce through) Tj T* (technology.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 229.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL (Chapter 2. System Analysis and Design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 211.8898 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Intended Users:) Tj /F1 10 Tf ( Farmers, Buyers and System Administrators.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 181.8898 cm
+q
+BT 1 0 0 1 0 14 Tm 12 TL /F2 10 Tf 0 0 0 rg (Future Partners:) Tj /F1 10 Tf ( MINAGRI, NAEB, District Authorities, Mobile Money Providers, Banks and) Tj T* (Transport Companies.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 78 151.8898 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 14 Tf 18 TL (High-Level Architecture) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 11 Tf
+13.2 TL
+ET
+BT
+1 0 0 1 56.69291 810.7087 Tm
+(Reg N\072 225032223) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Symbol
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/Contents 13 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 14 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 1489
+>>
+stream
+Gau0C8U&lZ&AI`dl:Ch8Z;r4k]eP^54!qb5iZ&l9!SLA/BJGQt5LkZ[K)m>;oQYo9?!Ug:lDm>hR/!r)Dj1:X9]9`"JRu`@%[Ln?0R\KKC%#]\;NcJ/?JlYd&-dAGgQ3n2VRRKCNU(Amq1@LjhY/,%(9>,Xd1\2D=JgVR(!,@aG6gE[7Q<+#^kMJH(tcRgEQqb.n6F:-o*u_U3.PT#(]QWTLVh;)mi/9,pcaHDg.+B?W]s*cT+un<GqdL959rZe$Q.to7FFscI=^Vd5PFIQf)&cTju]^D2ta$mo,Y:bmlTsgrRZ%TYg0nBd[`?^0W"50oL`6pf;$Z=[\!Z?[fjcns15A!PZ::CW[)5D*C('M!Au@t\;mSp$OG&j&5P_gMbX7W<rb@Gig!Ou.[#U2K&]D]516_^MhE[R5Fn4OaOa0:Sh!BZ7k-8=,s?a_keM"@.[8c,\uJWtKGJJgZtGCM#BF@lNQ<HaFR'"EQ?i0]YEHFgk:U-nR;3?/+t9d5lpI:Xr!We8Bk:[6-A3G90_pE$>kehi3T2'T+ZD2p/7/><+V*4tP+UR0aj[/b6V^*>gr!2\)b2P9!sLe4D/R2=)lG,j_fPj,Hj>irb=Jnk.ht+H("c!3M2,n+2/m&U\VRmT!nTBE&@9im_L]\N@JlY],H!lG*Pc$j`UdtrYrB9t#A1FLFF[&I<V%9d9=<0Ke"log^r)/mR&6%Ub@G`t*jmI!r``j65H.Tg5-5^(<:bYk=J[:;OGd.Z$mYCf>1P,:-$hr-S1UDV!Afchnfjbt[JRZtEr1E\eDCPpX<Pd[6&t3L0Q&u2.D8?Xd4>+q8O]t\Wa4q=%m5Q=jMu@;$d-iZb4]33OR6^un2-"8Q'83Z]Ge@C[-U$3StgIP$/5\BTLX9neP$_&UTRUX_c-$2CGh%4Pf>MLj>;.RQXB7ZdPF"RE;TZ;A.0!L9Tt05PDB'j<u*.Pg1>><dF?*<JV,F'H_>669tOg<g'6Cj)kj,Xgqrp]Fr@KQA^B0bj)q]pBW-pqWadrK^;E+V;<:efrdi5Wpq^lJepu5bQ8H*WP#[4PEX_`5X]!;'oKF#H_qFI5E)%PGp1QBj;MaT>Z_E%^#8$$C<0srp]Yq?#joslpIg`2JS-IrEl/MjW]Y0k01g=Z&.m6])$&d4mVF&6(b4DqaPdgja]qP]h2pF;if<`,mPT4W1lk7=&GPOS>)rPt*VR1#6mRXmYjeR]d8WrQ0RK;+M$n<X:mhlZqh(6\dUJ[;h@?7q:kLc>dqHS0sbSm]\dM-;8lSX'3XBos.^;]^RbOCCm_eP%N9B0Oc:&BDQ`\d`(./LO9Z/_^A.Bb&mfE^QB4a;<]IL(upH&P!j9jc7c5YH30RZpHU%06kQmmA[Fk'=(F_92l`iae20lS+D(7_MREDg7I_=^ciNL"cU/oAWdH?#Yu`F/C.^q&?;R5FHs7lNE2N1i1<;R]nA='DY:/q?2`1(eHY1qF"_odTf?2`tj"$!?=RgRK~>
+endstream
+endobj
+14 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 10 0 R
+/F4 11 0 R
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000120 00000 n 
+0000000169 00000 n 
+0000000446 00000 n 
+0000004205 00000 n 
+0000004312 00000 n 
+0000004419 00000 n 
+0000004531 00000 n 
+0000004643 00000 n 
+0000004753 00000 n 
+0000004831 00000 n 
+0000005033 00000 n 
+0000006615 00000 n 
+trailer
+<<
+/Size 15
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+6679
+%%EOF
