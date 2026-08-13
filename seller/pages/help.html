@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Help Center | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/help.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link active" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search help articles...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Help Center</h1>
+            <p>Find answers, tutorials and direct assistance for your seller account.</p>
+          </div>
+        </section>
+        <section class="three-col">
+          <article class="card">
+            <span class="stat-icon">📘</span>
+            <h3 class="help-style-1">Seller Guides</h3>
+            <p>Learn how to list products, process orders and receive payments.</p>
+            <button class="button small help-style-2" data-message="Seller guides opened.">View Guides</button>
+          </article>
+          <article class="card">
+            <span class="stat-icon">▶</span>
+            <h3 class="help-style-3">Tutorial Videos</h3>
+            <p>Watch simple demonstrations of important Agri-Link features.</p>
+            <button class="button small help-style-4" data-message="Tutorial library opened.">Watch Tutorials</button>
+          </article>
+          <article class="card">
+            <span class="stat-icon">💬</span>
+            <h3 class="help-style-5">Live Chat</h3>
+            <p>Chat with the support team during available support hours.</p>
+            <button class="button small primary help-style-6" data-message="Support chat request started.">Start Chat</button>
+          </article>
+        </section>
+        <div class="two-col help-style-7">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="panel-body">
+              <details open>
+                <summary>How do I add a new product?</summary>
+                <p>Open My Products, select Add New Product, complete all required information, upload clear product images and submit it for approval.</p>
+              </details>
+              <details>
+                <summary>Why is my product pending approval?</summary>
+                <p>Agri-Link reviews new listings to confirm that information is complete and appropriate. You will receive a notification after review.</p>
+              </details>
+              <details>
+                <summary>How do I accept and prepare an order?</summary>
+                <p>Open Orders, review the buyer, quantity, price and delivery information, then choose Accept. Update the order as it moves through preparation and delivery.</p>
+              </details>
+              <details>
+                <summary>When does money appear in my wallet?</summary>
+                <p>Payments appear as pending while an order is being processed. They become available according to the platform payment and delivery confirmation rules.</p>
+              </details>
+              <details>
+                <summary>How can I compare market prices?</summary>
+                <p>Use Market Prices to compare the current price, weekly average, highest and lowest price across supported districts.</p>
+              </details>
+              <details>
+                <summary>How do I report a problem with an order?</summary>
+                <p>Use the support form, include the order number and explain the issue clearly. Do not share passwords or verification codes.</p>
+              </details>
+            </div>
+          </section>
+          <aside>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Contact Support</h2>
+              </div>
+              <form class="panel-body demo-form" data-success="Your support request was submitted.">
+                <div class="field">
+                  <label>Issue Category</label>
+                  <select required>
+                    <option value="">Select a category</option>
+                    <option>Product Listing</option>
+                    <option>Order</option>
+                    <option>Payment</option>
+                    <option>Delivery</option>
+                    <option>Account</option>
+                    <option>Technical Problem</option>
+                  </select>
+                </div>
+                <div class="field help-style-8">
+                  <label>Subject</label>
+                  <input required placeholder="Short description of the problem">
+                </div>
+                <div class="field help-style-9">
+                  <label>Message</label>
+                  <textarea required placeholder="Explain what happened and include relevant order or payment numbers."></textarea>
+                </div>
+                <div class="field help-style-10">
+                  <label>Attachment (optional)</label>
+                  <input type="file" accept="image/*,.pdf">
+                </div>
+                <div class="form-actions">
+                  <button class="button primary">Submit Request</button>
+                </div>
+              </form>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Support Information</h2>
+              </div>
+              <div class="panel-body">
+                <div class="metric"><span>Email</span><strong>support@agri-link.rw</strong></div>
+                <div class="metric"><span>Phone</span><strong>+250 788 000 000</strong></div>
+                <div class="metric"><span>Hours</span><strong>Mon–Fri, 08:00–17:00</strong></div>
+                <button class="button danger help-style-11" data-message="Problem report form opened.">⚠ Report a Problem</button>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/help.js"></script>
+  </body>
+</html>

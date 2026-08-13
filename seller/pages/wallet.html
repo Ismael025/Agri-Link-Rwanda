@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Wallet | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/wallet.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link active" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search transactions...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Wallet</h1>
+            <p>Manage earnings, payments, withdrawals and payout accounts.</p>
+          </div>
+          <button class="button primary" data-open="withdrawModal">Withdraw Funds</button>
+        </section>
+        <section class="stats">
+          <article class="stat">
+            <span class="stat-icon">💳</span>
+            <div>
+              <strong>624K RWF</strong>
+              <span>Current Balance</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">⌛</span>
+            <div>
+              <strong>186K RWF</strong>
+              <span>Pending Payments</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">✓</span>
+            <div>
+              <strong>1.24M RWF</strong>
+              <span>Completed Payments</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">⇩</span>
+            <div>
+              <strong>620K RWF</strong>
+              <span>Total Withdrawals</span>
+            </div>
+          </article>
+        </section>
+        <div class="two-col">
+          <section class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Payment History</h2>
+                <p>All buyer payments and withdrawals</p>
+              </div>
+              <button class="button small" data-message="Transaction statement exported.">Export</button>
+            </div>
+            <div class="tabs">
+              <button class="tab active" data-tab="allPayments">All</button>
+              <button class="tab" data-tab="completedPayments">Completed</button>
+              <button class="tab" data-tab="pendingPayments">Pending</button>
+              <button class="tab" data-tab="withdrawals">Withdrawals</button>
+            </div>
+            <div id="allPayments" class="tab-content active">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Transaction</th>
+                      <th>Details</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Status</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#PAY-2081</td>
+                      <td>Order #AGR-1045</td>
+                      <td>17 Jul 2026</td>
+                      <td class="price-up">+96,000 RWF</td>
+                      <td><span class="status green">Completed</span></td>
+                      <td><button class="button small" data-message="Payment details opened.">Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>#PAY-2080</td>
+                      <td>Order #AGR-1048</td>
+                      <td>17 Jul 2026</td>
+                      <td>+72,000 RWF</td>
+                      <td><span class="status orange">Pending</span></td>
+                      <td><button class="button small" data-message="Payment details opened.">Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>#WDR-0381</td>
+                      <td>Mobile Money withdrawal</td>
+                      <td>14 Jul 2026</td>
+                      <td class="price-down">−200,000 RWF</td>
+                      <td><span class="status green">Completed</span></td>
+                      <td><button class="button small" data-message="Withdrawal details opened.">Details</button></td>
+                    </tr>
+                    <tr>
+                      <td>#PAY-2074</td>
+                      <td>Order #AGR-1042</td>
+                      <td>12 Jul 2026</td>
+                      <td class="price-up">+87,500 RWF</td>
+                      <td><span class="status green">Completed</span></td>
+                      <td><button class="button small">Details</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div id="completedPayments" class="tab-content panel-body">
+              <p>Completed buyer payments appear here.</p>
+            </div>
+            <div id="pendingPayments" class="tab-content panel-body">
+              <p>Payments waiting for completion appear here.</p>
+            </div>
+            <div id="withdrawals" class="tab-content panel-body">
+              <p>Your withdrawal requests appear here.</p>
+            </div>
+          </section>
+          <aside>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Payout Accounts</h2>
+                <button class="button small" data-open="accountModal">＋ Add</button>
+              </div>
+              <div class="panel-body">
+                <div class="card">
+                  <h3>📱 MTN Mobile Money <span class="status green">Primary</span></h3>
+                  <p>Ismael Niyokwiringirwa<br>+250 78•• ••• 456</p>
+                </div>
+                <div class="card wallet-style-1">
+                  <h3>🏦 Bank of Kigali</h3>
+                  <p>Ismael Niyokwiringirwa<br>Account: •••• 0921</p>
+                </div>
+                <p class="wallet-style-2">For security, withdrawals can only be sent to verified accounts owned by the farmer.</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <div class="modal" id="withdrawModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Withdraw Funds</h2>
+          <button class="close-btn" data-close="withdrawModal">×</button>
+        </div>
+        <form class="panel-body demo-form" data-success="Withdrawal request submitted.">
+          <div class="form-grid">
+            <div class="field full">
+              <label>Available Balance</label>
+              <input value="624,000 RWF" disabled>
+            </div>
+            <div class="field">
+              <label>Amount (RWF)</label>
+              <input type="number" min="1000" max="624000" required>
+            </div>
+            <div class="field">
+              <label>Withdrawal Account</label>
+              <select required>
+                <option>MTN Mobile Money •••456</option>
+                <option>Bank of Kigali •••0921</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="button" type="button" data-close="withdrawModal">Cancel</button>
+            <button class="button primary">Request Withdrawal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="accountModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Add Payout Account</h2>
+          <button class="close-btn" data-close="accountModal">×</button>
+        </div>
+        <form class="panel-body demo-form" data-success="Payout account submitted for verification.">
+          <div class="form-grid">
+            <div class="field">
+              <label>Account Type</label>
+              <select>
+                <option>Mobile Money</option>
+                <option>Bank Account</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Account Provider</label>
+              <input placeholder="MTN, Airtel or bank name" required>
+            </div>
+            <div class="field">
+              <label>Account Name</label>
+              <input required>
+            </div>
+            <div class="field">
+              <label>Phone / Account Number</label>
+              <input required>
+            </div>
+          </div>
+          <div class="form-actions">

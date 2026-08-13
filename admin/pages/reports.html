@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agri-Link administrative reports and analytics.">
+    <title>Reports &amp; Analytics | Agri-Link Admin</title>
+    <link rel="stylesheet" href="../styles/reports.css">
+  </head>
+  <body data-page="reports">
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin-dashboard.html">
+          <span class="brand-mark"><img class="local-icon" src="../icons/leaf.svg" alt=""></span>
+          <span><strong>Agri-Link</strong><small>Admin Portal</small></span>
+        </a>
+        <p class="nav-label">Platform</p>
+        <nav class="nav" aria-label="Admin navigation">
+          <a href="admin-dashboard.html"><img class="local-icon" src="../icons/dashboard.svg" alt="">Dashboard</a>
+          <a href="users.html"><img class="local-icon" src="../icons/users.svg" alt="">Users<span class="badge">12</span></a>
+          <a href="verifications.html"><img class="local-icon" src="../icons/shield.svg" alt="">Verifications<span class="badge">7</span></a>
+          <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">Products<span class="badge">9</span></a>
+          <a href="categories.html"><img class="local-icon" src="../icons/tag.svg" alt="">Categories</a>
+          <a href="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">Orders</a>
+          <a href="payments.html"><img class="local-icon" src="../icons/payment.svg" alt="">Payments</a>
+          <a href="deliveries.html"><img class="local-icon" src="../icons/delivery.svg" alt="">Deliveries</a>
+          <a href="disputes.html"><img class="local-icon" src="../icons/gavel.svg" alt="">Disputes<span class="badge">4</span></a>
+          <a href="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages<span class="badge">3</span></a>
+          <a class="active" href="reports.html"><img class="local-icon" src="../icons/report.svg" alt="">Reports</a>
+          <a href="notifications.html"><img class="local-icon" src="../icons/bell.svg" alt="">Notifications</a>
+          <a href="audit-logs.html"><img class="local-icon" src="../icons/audit.svg" alt="">Audit Logs</a>
+        </nav>
+        <p class="nav-label">Account</p>
+        <nav class="nav" aria-label="Admin account navigation">
+          <a href="profile.html"><img class="local-icon" src="../icons/user.svg" alt="">Profile</a>
+          <a href="settings.html"><img class="local-icon" src="../icons/settings.svg" alt="">Settings</a>
+          <a href="help.html"><img class="local-icon" src="../icons/help.svg" alt="">Help Center</a>
+        </nav>
+        <div class="logout">
+          <a href="logout.html"><img class="local-icon" src="../icons/logout.svg" alt="">Logout</a>
+        </div>
+      </aside>
+      <div class="overlay" data-action="close-nav"></div>
+      <div class="main">
+        <header class="topbar">
+          <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation"><img class="local-icon" src="../icons/menu.svg" alt=""></button>
+          <label class="global-search"><img class="local-icon" src="../icons/search.svg" alt=""><input id="globalSearch" type="search" placeholder="Search this page..." aria-label="Search this page"></label>
+          <div class="account">
+            <a class="icon-btn" href="notifications.html" aria-label="Notifications"><img class="local-icon" src="../icons/bell.svg" alt=""><span class="dot"></span></a>
+            <span class="avatar">IN</span>
+            <span class="account-copy"><strong>Ismael N.</strong><small>Super Administrator</small></span>
+          </div>
+        </header>
+        <main class="content">
+          <section class="page-head">
+            <div>
+              <h1>Reports & Analytics</h1>
+              <p>Measure marketplace growth, transactions, user activity and operational performance.</p>
+            </div>
+            <button class="button primary" data-primary-action><img class="local-icon" src="../icons/download.svg" alt="">Generate Report</button>
+          </section>
+          <section class="stats">
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/money.svg" alt=""></span>
+              <div>
+                <strong>48.6M RWF</strong>
+                <span>Monthly marketplace value</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/cart.svg" alt=""></span>
+              <div>
+                <strong>91.7%</strong>
+                <span>Order completion</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/users.svg" alt=""></span>
+              <div>
+                <strong>8.4%</strong>
+                <span>User growth</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/delivery.svg" alt=""></span>
+              <div>
+                <strong>96.4%</strong>
+                <span>On-time delivery</span>
+              </div>
+            </article>
+          </section>
+          <div class="report-grid">
+            <section class="panel">
+              <div class="panel-head">
+                <div>
+                  <h2>Monthly Transaction Value</h2>
+                  <p>Demonstration data in millions of RWF</p>
+                </div>
+                <select><option>Jan–Aug 2026</option></select>
+              </div>
+              <div class="chart large">
+                <div class="y-labels">
+                  <span>60M</span>
+                  <span>40M</span>
+                  <span>20M</span>
+                  <span>0</span>
+                </div>
+                <div class="bars">
+                  <div><i class="bar-43"></i><span>Jan</span></div>
+                  <div><i class="bar-51"></i><span>Feb</span></div>
+                  <div><i class="bar-57"></i><span>Mar</span></div>
+                  <div><i class="bar-64"></i><span>Apr</span></div>
+                  <div><i class="bar-70"></i><span>May</span></div>
+                  <div><i class="bar-76"></i><span>Jun</span></div>
+                  <div><i class="bar-84"></i><span>Jul</span></div>
+                  <div><i class="bar-92"></i><span>Aug</span></div>
+                </div>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Report Library</h2>
+              </div>
+              <div class="report-list">
+                <button data-row-action="Download"><img class="local-icon" src="../icons/file.svg" alt="">Monthly platform report<small>August 2026 • PDF</small></button>
+                <button data-row-action="Download"><img class="local-icon" src="../icons/file.svg" alt="">Payment reconciliation<small>August 2026 • CSV</small></button>
+                <button data-row-action="Download"><img class="local-icon" src="../icons/file.svg" alt="">User and verification summary<small>Quarter 3 • PDF</small></button>
+                <button data-row-action="Download"><img class="local-icon" src="../icons/file.svg" alt="">Delivery performance<small>July 2026 • CSV</small></button>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scripts/reports.js"></script>
+  </body>
+</html>

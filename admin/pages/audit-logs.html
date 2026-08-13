@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maintain a traceable record of important administrative and security actions.">
+    <title>Audit Logs | Agri-Link Admin</title>
+    <link rel="stylesheet" href="../styles/audit-logs.css">
+  </head>
+  <body data-page="audit-logs">
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin-dashboard.html">
+          <span class="brand-mark"><img class="local-icon" src="../icons/leaf.svg" alt=""></span>
+          <span><strong>Agri-Link</strong><small>Admin Portal</small></span>
+        </a>
+        <p class="nav-label">Platform</p>
+        <nav class="nav" aria-label="Admin navigation">
+          <a href="admin-dashboard.html"><img class="local-icon" src="../icons/dashboard.svg" alt="">Dashboard</a>
+          <a href="users.html"><img class="local-icon" src="../icons/users.svg" alt="">Users<span class="badge">12</span></a>
+          <a href="verifications.html"><img class="local-icon" src="../icons/shield.svg" alt="">Verifications<span class="badge">7</span></a>
+          <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">Products<span class="badge">9</span></a>
+          <a href="categories.html"><img class="local-icon" src="../icons/tag.svg" alt="">Categories</a>
+          <a href="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">Orders</a>
+          <a href="payments.html"><img class="local-icon" src="../icons/payment.svg" alt="">Payments</a>
+          <a href="deliveries.html"><img class="local-icon" src="../icons/delivery.svg" alt="">Deliveries</a>
+          <a href="disputes.html"><img class="local-icon" src="../icons/gavel.svg" alt="">Disputes<span class="badge">4</span></a>
+          <a href="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages<span class="badge">3</span></a>
+          <a href="reports.html"><img class="local-icon" src="../icons/report.svg" alt="">Reports</a>
+          <a href="notifications.html"><img class="local-icon" src="../icons/bell.svg" alt="">Notifications</a>
+          <a class="active" href="audit-logs.html"><img class="local-icon" src="../icons/audit.svg" alt="">Audit Logs</a>
+        </nav>
+        <p class="nav-label">Account</p>
+        <nav class="nav" aria-label="Admin account navigation">
+          <a href="profile.html"><img class="local-icon" src="../icons/user.svg" alt="">Profile</a>
+          <a href="settings.html"><img class="local-icon" src="../icons/settings.svg" alt="">Settings</a>
+          <a href="help.html"><img class="local-icon" src="../icons/help.svg" alt="">Help Center</a>
+        </nav>
+        <div class="logout">
+          <a href="logout.html"><img class="local-icon" src="../icons/logout.svg" alt="">Logout</a>
+        </div>
+      </aside>
+      <div class="overlay" data-action="close-nav"></div>
+      <div class="main">
+        <header class="topbar">
+          <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation"><img class="local-icon" src="../icons/menu.svg" alt=""></button>
+          <label class="global-search"><img class="local-icon" src="../icons/search.svg" alt=""><input id="globalSearch" type="search" placeholder="Search this page..." aria-label="Search this page"></label>
+          <div class="account">
+            <a class="icon-btn" href="notifications.html" aria-label="Notifications"><img class="local-icon" src="../icons/bell.svg" alt=""><span class="dot"></span></a>
+            <span class="avatar">IN</span>
+            <span class="account-copy"><strong>Ismael N.</strong><small>Super Administrator</small></span>
+          </div>
+        </header>
+        <main class="content">
+          <section class="page-head">
+            <div>
+              <h1>Audit Logs</h1>
+              <p>Maintain a traceable record of important administrative and security actions.</p>
+            </div>
+            <button class="button primary" data-primary-action><img class="local-icon" src="../icons/plus.svg" alt="">Export Audit Log</button>
+          </section>
+          <section class="stats">
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/users.svg" alt=""></span>
+              <div>
+                <strong>18,421</strong>
+                <span>Logged Events</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/shield.svg" alt=""></span>
+              <div>
+                <strong>286</strong>
+                <span>Today</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/box.svg" alt=""></span>
+              <div>
+                <strong>7</strong>
+                <span>Security Events</span>
+              </div>
+            </article>
+            <article class="stat">
+              <span class="stat-icon"><img class="local-icon" src="../icons/tag.svg" alt=""></span>
+              <div>
+                <strong>180 days</strong>
+                <span>Retention</span>
+              </div>
+            </article>
+          </section>
+          <section class="panel">
+            <div class="toolbar">
+              <input class="search-input" id="tableSearch" type="search" placeholder="Search records...">
+              <div class="filters">
+                <select id="statusFilter">
+                  <option>All events</option>
+                  <option>Administrative</option>
+                  <option>Security</option>
+                  <option>System</option>
+                  <option>Failed</option>
+                </select>
+                <button class="button" data-action="refresh"><img class="local-icon" src="../icons/refresh.svg" alt="">Refresh</button>
+                <button class="button" data-action="download"><img class="local-icon" src="../icons/download.svg" alt="">Export</button>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Administrator</th>
+                    <th>Action</th>
+                    <th>Resource</th>
+                    <th>IP / Device</th>
+                    <th>Result</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody id="recordsTable">
+                  <tr>
+                    <td>11 Aug, 09:42</td>
+                    <td>Admin Ismael</td>
+                    <td>Approved verification</td>
+                    <td>USER-2831</td>
+                    <td>Admin workstation</td>
+                    <td><span class="status green">Success</span></td>
+                    <td><button class="button small" data-row-action="View">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>11 Aug, 09:31</td>
+                    <td>Admin Diane</td>
+                    <td>Restricted product</td>
+                    <td>PRD-1840</td>
+                    <td>Chrome / Kigali</td>
+                    <td><span class="status green">Success</span></td>
+                    <td><button class="button small" data-row-action="View">View</button></td>
+                  </tr>
+                  <tr>
+                    <td>11 Aug, 09:05</td>
+                    <td>System</td>
+                    <td>Blocked login</td>
+                    <td>ACCOUNT-443</td>
+                    <td>Unknown device</td>
+                    <td><span class="status red">Blocked</span></td>
+                    <td><button class="button small" data-row-action="Inspect">Inspect</button></td>
+                  </tr>
+                  <tr>
+                    <td>11 Aug, 08:54</td>
+                    <td>Admin Ismael</td>
+                    <td>Exported report</td>
+                    <td>RPT-2026-08</td>
+                    <td>Admin workstation</td>
+                    <td><span class="status green">Success</span></td>
+                    <td><button class="button small" data-row-action="View">View</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="empty" id="emptyState">No matching records found.</div>
+            </div>
+            <div class="table-footer">
+              <span id="recordCount">Showing 4 demonstration records</span>
+              <span>Frontend prototype • backend connection later</span>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scripts/audit-logs.js"></script>
+  </body>
+</html>

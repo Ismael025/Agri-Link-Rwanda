@@ -1,4 +1,4 @@
-/* Independent stylesheet for buyer-dashboard.html. */
+/* Independent stylesheet for buyer-help.html. */
 
 :root{--green-950:#123524;--green-800:#1f603d;--green-700:#277a4b;--green-600:#33975e;--green-100:#e8f6ed;--green-50:#f3fbf6;--orange:#e68a00;--orange-50:#fff5df;--red:#cf3838;--red-50:#fff0f0;--blue:#2672d8;--blue-50:#edf5ff;--ink:#17211b;--muted:#69766d;--line:#e2e8e4;--white:#fff;--canvas:#f4f7f5;--sidebar:255px;--radius:15px;--shadow:0 7px 25px rgba(20,55,35,.06)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--canvas);color:var(--ink)}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{text-decoration:none;color:inherit}img{max-width:100%}
@@ -34,8 +34,13 @@
 
 
 /* Styles extracted from original inline style attributes. */
-.buyer-dashboard-style-1 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-2 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-3 { margin-top:20px }
-.buyer-dashboard-style-4 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-5 { font-size:10px;color:var(--green-700) }
+.buyer-help-style-1 { margin-top:12px }
+.buyer-help-style-2 { margin-top:10px }
+.buyer-help-style-3 { margin-top:12px }
+.buyer-help-style-4 { margin-top:10px }
+.buyer-help-style-5 { margin-top:12px }
+.buyer-help-style-6 { margin-top:10px }
+.buyer-help-style-7 { margin-top:20px }
+.buyer-help-style-8 { margin-top:12px }
+.buyer-help-style-9 { margin-top:12px }
+.buyer-help-style-10 { margin-top:12px }

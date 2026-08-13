@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Settings | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/settings.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link active" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search settings...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Settings</h1>
+            <p>Control language, notifications, privacy and account security.</p>
+          </div>
+        </section>
+        <div class="two-col">
+          <section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>General Settings</h2>
+              </div>
+              <form class="panel-body demo-form" data-success="General settings saved.">
+                <div class="form-grid">
+                  <div class="field">
+                    <label>Language</label>
+                    <select>
+                      <option>English</option>
+                      <option>Kinyarwanda</option>
+                      <option>French</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Currency</label>
+                    <select>
+                      <option>Rwandan Franc (RWF)</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Time Zone</label>
+                    <select>
+                      <option>Africa/Kigali (GMT+2)</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label>Default Selling District</label>
+                    <select>
+                      <option>Rusizi</option>
+                      <option>Kigali</option>
+                      <option>Huye</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button class="button primary">Save General Settings</button>
+                </div>
+              </form>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Notification Preferences</h2>
+              </div>
+              <div class="panel-body">
+                <div class="setting-row">
+                  <div>
+                    <strong>New Orders</strong>
+                    <p>Notify me immediately when a buyer submits an order.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <div class="setting-row">
+                  <div>
+                    <strong>Messages</strong>
+                    <p>Notify me about new buyer messages.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <div class="setting-row">
+                  <div>
+                    <strong>Payments</strong>
+                    <p>Notify me when payments are received or delayed.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <div class="setting-row">
+                  <div>
+                    <strong>Market Price Alerts</strong>
+                    <p>Send important price changes for my products.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <div class="setting-row">
+                  <div>
+                    <strong>Marketing Updates</strong>
+                    <p>Receive optional platform news and seller tips.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+                </div>
+                <button class="button primary settings-style-1" data-message="Notification preferences saved.">Save Preferences</button>
+              </div>
+            </section>
+          </section>
+          <aside>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Password & Security</h2>
+              </div>
+              <form class="panel-body demo-form" data-success="Password changed successfully.">
+                <div class="field"><label>Current Password</label><input type="password" required></div>
+                <div class="field settings-style-2">
+                  <label>New Password</label><input type="password" minlength="8" required>
+                  <small>Use at least 8 characters with letters and numbers.</small>
+                </div>
+                <div class="field settings-style-3"><label>Confirm New Password</label><input type="password" minlength="8" required></div>
+                <div class="form-actions">
+                  <button class="button primary">Change Password</button>
+                </div>
+              </form>
+              <div class="panel-body settings-style-4">
+                <div class="setting-row">
+                  <div>
+                    <strong>Two-Factor Authentication</strong>
+                    <p>Add an extra verification step when signing in.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+                </div>
+                <div class="metric"><span>Last login</span><strong>17 Jul 2026, 15:42</strong></div>
+                <div class="metric"><span>Active device</span><strong>Chrome • Windows</strong></div>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Privacy</h2>
+              </div>
+              <div class="panel-body">
+                <div class="setting-row">
+                  <div>
+                    <strong>Show Phone to Buyers</strong>
+                    <p>Only accepted-order buyers can see it.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <div class="setting-row">
+                  <div>
+                    <strong>Show Farm Location</strong>
+                    <p>Display district and sector on your profile.</p>
+                  </div>
+                  <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+                </div>
+                <button class="button danger settings-style-5" data-message="Contact support to deactivate your account safely.">Deactivate Account</button>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/settings.js"></script>
+  </body>
+</html>

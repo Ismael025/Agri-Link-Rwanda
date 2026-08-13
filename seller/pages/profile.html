@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profile | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link active" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search Agri-Link...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Farmer Profile</h1>
+            <p>Manage personal, farm and verification information visible on Agri-Link.</p>
+          </div>
+          <button class="button primary" data-message="Profile editing enabled. Update the form and save changes.">✎ Edit Profile</button>
+        </section>
+        <section class="panel">
+          <div class="profile-cover"></div>
+          <div class="profile-summary">
+            <span class="profile-photo">IM</span>
+            <div class="profile-style-1">
+              <h2>Ismael Farm <span class="status green">✓ Verified Farmer</span></h2>
+              <p>Mixed-crop farm • Rusizi District • Member since January 2026</p>
+            </div>
+            <button class="button" data-message="Choose a new profile or farm image.">Change Photo</button>
+          </div>
+        </section>
+        <div class="two-col profile-style-2">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Personal & Farm Information</h2>
+            </div>
+            <form class="panel-body demo-form" data-success="Profile information saved.">
+              <div class="form-grid">
+                <div class="field"><label>Full Name</label><input value="Ismael Niyokwiringirwa" required></div>
+                <div class="field"><label>Farm Name</label><input value="Ismael Farm" required></div>
+                <div class="field"><label>Phone Number</label><input value="+250 788 123 456" required></div>
+                <div class="field"><label>Email Address</label><input type="email" value="ismael@example.com" required></div>
+                <div class="field">
+                  <label>District</label>
+                  <select>
+                    <option selected>Rusizi</option>
+                    <option>Huye</option>
+                    <option>Musanze</option>
+                    <option>Nyagatare</option>
+                  </select>
+                </div>
+                <div class="field"><label>Sector</label><input value="Giheke"></div>
+                <div class="field full"><label>Farm Description</label><textarea>We produce quality tomatoes, maize, Irish potatoes, beans and seasonal fruits for households, restaurants and retailers.</textarea></div>
+                <div class="field full">
+                  <label>Farm Images</label>
+                  <input type="file" accept="image/*" multiple>
+                  <small>Upload clear images showing your farm and production activities.</small>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="button primary">Save Changes</button>
+              </div>
+            </form>
+          </section>
+          <aside>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Verification Status</h2>
+              </div>
+              <div class="panel-body">
+                <div class="card profile-style-3">
+                  <h3>✓ Identity Verified</h3>
+                  <p>Your identity and farmer account have been approved.</p>
+                </div>
+                <div class="metric"><span>National ID</span><span class="status green">Approved</span></div>
+                <div class="metric"><span>Phone Number</span><span class="status green">Verified</span></div>
+                <div class="metric"><span>Farm Location</span><span class="status green">Verified</span></div>
+                <div class="metric"><span>Bank / Mobile Money</span><span class="status green">Verified</span></div>
+                <button class="button profile-style-4" data-open="documentModal">Manage Documents</button>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Profile Completion</h2>
+              </div>
+              <div class="panel-body">
+                <strong>92% Complete</strong>
+                <div class="progress"><i class="profile-style-5"></i></div>
+                <p class="profile-style-6">Add two more farm images to improve buyer trust.</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <div class="modal" id="documentModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Identification Documents</h2>
+          <button class="close-btn" data-close="documentModal">×</button>
+        </div>
+        <form class="panel-body demo-form" data-success="Documents submitted for verification.">
+          <div class="field">
+            <label>Document Type</label>
+            <select>
+              <option>National ID</option>
+              <option>Farmer Registration Certificate</option>
+              <option>Cooperative Membership</option>
+            </select>
+          </div>
+          <div class="field profile-style-7">
+            <label>Upload Document</label>
+            <input type="file" accept="image/*,.pdf" required>
+            <small>Accepted: JPG, PNG or PDF. Protect sensitive documents and only upload through trusted systems.</small>
+          </div>
+          <div class="form-actions">
+            <button class="button primary">Submit Document</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/profile.js"></script>
+  </body>
+</html>

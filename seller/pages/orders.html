@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Orders | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/orders.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html"><span class="nav-icon">▦</span>Dashboard</a>
+        <a class="nav-link" href="products.html"><span class="nav-icon">📦</span>My Products</a>
+        <a class="nav-link active" href="orders.html"><span class="nav-icon">🛒</span>Orders<span class="nav-badge">5</span></a>
+        <a class="nav-link" href="buyers.html"><span class="nav-icon">👥</span>Buyers</a>
+        <a class="nav-link" href="market-prices.html"><span class="nav-icon">📈</span>Market Prices</a>
+        <a class="nav-link" href="messages.html"><span class="nav-icon">💬</span>Messages<span class="nav-badge">3</span></a>
+        <a class="nav-link" href="analytics.html"><span class="nav-icon">📊</span>Analytics</a>
+        <a class="nav-link" href="reviews.html"><span class="nav-icon">⭐</span>Reviews</a>
+        <a class="nav-link" href="wallet.html"><span class="nav-icon">💳</span>Wallet</a>
+        <a class="nav-link" href="notifications.html"><span class="nav-icon">🔔</span>Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search orders, buyers, products...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Orders</h1>
+            <p>Receive, process and track every buyer order from one place.</p>
+          </div>
+          <button class="button" data-message="Order report prepared for download.">⇩ Export Orders</button>
+        </section>
+        <section class="stats">
+          <article class="stat">
+            <span class="stat-icon">⌛</span>
+            <div>
+              <strong>5</strong>
+              <span>Pending Orders</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">✓</span>
+            <div>
+              <strong>8</strong>
+              <span>Accepted</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">🚚</span>
+            <div>
+              <strong>4</strong>
+              <span>In Transit</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">✔</span>
+            <div>
+              <strong>29</strong>
+              <span>Completed</span>
+            </div>
+          </article>
+        </section>
+        <section class="panel">
+          <div class="toolbar">
+            <input class="search-input" data-filter-table="ordersTable" placeholder="Search order number, buyer or product...">
+            <div class="filters">
+              <select data-status-filter="ordersTable">
+                <option value="all">All Statuses</option>
+                <option value="pending">Pending</option>
+                <option value="accepted">Accepted</option>
+                <option value="preparing">Preparing</option>
+                <option value="ready">Ready for Pickup</option>
+                <option value="transit">In Transit</option>
+                <option value="delivered">Delivered</option>
+                <option value="cancelled">Cancelled</option>
+              </select>
+              <select>
+                <option>Newest First</option>
+                <option>Oldest First</option>
+                <option>Highest Value</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="ordersTable">
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Buyer</th>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Total Price</th>
+                  <th>Payment</th>
+                  <th>Delivery</th>
+                  <th>Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-status="pending">
+                  <td>#AGR-1048</td>
+                  <td>
+                    <div class="person"><span class="person-mark">AK</span>Amahoro Kitchen</div>
+                  </td>
+                  <td>Fresh Tomatoes</td>
+                  <td>120 kg</td>
+                  <td>72,000 RWF</td>
+                  <td><span class="status orange">Pending</span></td>
+                  <td><span class="status orange">Pending</span></td>
+                  <td>17 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small primary" data-message="Order accepted.">Accept</button>
+                      <button class="button small danger" data-message="Order rejected.">Reject</button>
+                      <button class="button small" data-open="orderModal">Details</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr data-status="preparing">
+                  <td>#AGR-1047</td>
+                  <td>Huye Market</td>
+                  <td>Yellow Maize</td>
+                  <td>8 bags</td>
+                  <td>168,000 RWF</td>
+                  <td><span class="status green">Paid</span></td>
+                  <td><span class="status blue">Preparing</span></td>
+                  <td>16 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small primary" data-message="Order marked ready for pickup.">Mark Ready</button>
+                      <button class="button small" data-open="orderModal">Details</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr data-status="ready">
+                  <td>#AGR-1046</td>
+                  <td>Green Hills Hotel</td>
+                  <td>Irish Potatoes</td>
+                  <td>250 kg</td>
+                  <td>87,500 RWF</td>
+                  <td><span class="status green">Paid</span></td>
+                  <td><span class="status green">Ready</span></td>
+                  <td>15 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small primary" data-message="Delivery started.">Start Delivery</button>
+                      <button class="button small" data-open="orderModal">Details</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr data-status="transit">
+                  <td>#AGR-1045</td>
+                  <td>City Supermarket</td>
+                  <td>Fresh Avocados</td>
+                  <td>6 crates</td>
+                  <td>96,000 RWF</td>
+                  <td><span class="status green">Paid</span></td>
+                  <td><span class="status blue">In Transit</span></td>
+                  <td>14 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small primary" data-message="Order marked delivered.">Mark Delivered</button>
+                      <button class="button small" data-open="orderModal">Details</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr data-status="delivered">
+                  <td>#AGR-1044</td>
+                  <td>Kigali Fresh Foods</td>
+                  <td>Green Beans</td>
+                  <td>70 kg</td>
+                  <td>63,000 RWF</td>
+                  <td><span class="status green">Paid</span></td>
+                  <td><span class="status green">Delivered</span></td>
+                  <td>12 Jul 2026</td>
+                  <td><button class="button small" data-open="orderModal">View Details</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-footer">
+            <span>Showing 5 of 46 orders</span>
+            <span>Page 1 of 10</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal" id="orderModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Order #AGR-1048 Details</h2>
+          <button class="close-btn" data-close="orderModal">×</button>
+        </div>
+        <div class="panel-body">
+          <div class="equal-col">
+            <div class="card">
+              <h3>Buyer Information</h3>
+              <p>Amahoro Kitchen Ltd<br>Kicukiro, Kigali<br>+250 788 123 456</p>
+            </div>
+            <div class="card">
+              <h3>Delivery Information</h3>
+              <p>Buyer delivery<br>KN 5 Road, Kicukiro<br>Expected: 18 July 2026</p>
+            </div>
+          </div>
+          <div class="metric"><span>Fresh Tomatoes × 120 kg</span><strong>72,000 RWF</strong></div>

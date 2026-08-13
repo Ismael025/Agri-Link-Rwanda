@@ -1,4 +1,4 @@
-/* Independent stylesheet for buyer-dashboard.html. */
+/* Independent stylesheet for profile.html. */
 
 :root{--green-950:#123524;--green-800:#1f603d;--green-700:#277a4b;--green-600:#33975e;--green-100:#e8f6ed;--green-50:#f3fbf6;--orange:#e68a00;--orange-50:#fff5df;--red:#cf3838;--red-50:#fff0f0;--blue:#2672d8;--blue-50:#edf5ff;--ink:#17211b;--muted:#69766d;--line:#e2e8e4;--white:#fff;--canvas:#f4f7f5;--sidebar:255px;--radius:15px;--shadow:0 7px 25px rgba(20,55,35,.06)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--canvas);color:var(--ink)}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{text-decoration:none;color:inherit}img{max-width:100%}
@@ -33,9 +33,15 @@
 @media(max-width:520px){.product-grid,.farmer-grid{grid-template-columns:1fr}.category-row{grid-template-columns:repeat(2,1fr)}.hero-art{display:none}.buyer-hero{padding:21px}.buyer-hero h1{font-size:22px}}
 
 
-/* Styles extracted from original inline style attributes. */
-.buyer-dashboard-style-1 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-2 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-3 { margin-top:20px }
-.buyer-dashboard-style-4 { font-size:10px;color:var(--green-700) }
-.buyer-dashboard-style-5 { font-size:10px;color:var(--green-700) }
+/* Former inline styles. */
+.profile-style-1 { flex:1 }
+.profile-style-2 { margin-top:20px }
+.profile-style-3 { background:var(--green-50) }
+.profile-style-4 { width:100%;margin-top:14px }
+.profile-style-5 { width:92% }
+.profile-style-6 { font-size:9px;color:var(--muted) }
+.profile-style-7 { margin-top:15px }
+
+
+/* Local SVG icons. */
+.local-icon{width:18px;height:18px;display:block;flex:0 0 18px}.sidebar .local-icon{filter:brightness(0) invert(1);opacity:.84}.icon-btn .local-icon,.menu-btn .local-icon,.stat-icon .local-icon,.notice-icon .local-icon,.action .local-icon,.date-pill .local-icon,.search .local-icon{filter:none}

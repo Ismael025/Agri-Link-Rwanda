@@ -1,21 +1,22 @@
-const form = document.getElementById("loginForm");
+const loginForm = document.getElementById("loginForm");
+const roleInput = document.getElementById("role");
 
-form.addEventListener("submit", function(e){
+const dashboardPaths = {
+  buyer: "../customer/page layout/buyer-dashboard.html",
+  seller: "../seller/pages/farmer-dashboard.html",
+  admin: "../admin/pages/admin-dashboard.html"
+};
 
-    e.preventDefault();
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const role = document.getElementById("role").value;
+  const selectedRole = roleInput.value;
+  const destination = dashboardPaths[selectedRole];
 
-    if(role === "seller"){
-        window.location.href = "../seller/html pages/farmer-dashboard.html";
-    }
+  if (!destination) {
+    alert("Please select your role.");
+    return;
+  }
 
-    else if(role === "buyer"){
-        window.location.href = "../customer/page layout/buyer-dashboard.html";
-    }
-
-    else if(role === "admin"){
-        window.location.href = "../admin/html pages/admin-dashboard.html";
-    }
-
+  window.location.assign(destination);
 });

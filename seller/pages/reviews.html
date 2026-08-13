@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reviews | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/reviews.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link active" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search reviews...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Reviews & Ratings</h1>
+            <p>See buyer feedback and respond professionally.</p>
+          </div>
+          <select class="button">
+            <option>All Reviews</option>
+            <option>5 Stars</option>
+            <option>4 Stars</option>
+            <option>3 Stars or Below</option>
+            <option>Not Replied</option>
+          </select>
+        </section>
+        <div class="two-col">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Customer Reviews</h2>
+              <span>48 reviews</span>
+            </div>
+            <div class="panel-body">
+              <article class="list-item">
+                <span class="person-mark">AK</span>
+                <div class="list-copy">
+                  <strong>Aline Kayitesi <span class="stars">★★★★★</span></strong>
+                  <p>The tomatoes were fresh, well packed and delivered on time. I will order again.</p>
+                  <small>Fresh Tomatoes • Order #AGR-1042 • 15 July 2026</small>
+                  <div class="button-row reviews-style-1">
+                    <button class="button small" data-open="replyModal">Reply</button>
+                    <button class="button small" data-message="Review reported to the administrator.">Report</button>
+                  </div>
+                </div>
+              </article>
+              <article class="list-item">
+                <span class="person-mark">JM</span>
+                <div class="list-copy">
+                  <strong>Jean Mugabo <span class="stars">★★★★★</span></strong>
+                  <p>Good maize quality and accurate quantity. Communication was clear.</p>
+                  <small>Yellow Maize • Order #AGR-1036 • 12 July 2026</small>
+                  <div class="card reviews-style-2">
+                    <strong>Your reply</strong>
+                    <p>Thank you for your feedback. We are glad you were satisfied.</p>
+                  </div>
+                </div>
+              </article>
+              <article class="list-item">
+                <span class="person-mark">MN</span>
+                <div class="list-copy">
+                  <strong>Marie Nyiraneza <span class="stars">★★★★☆</span></strong>
+                  <p>The potatoes were good, but delivery arrived later than expected.</p>
+                  <small>Irish Potatoes • Order #AGR-1029 • 8 July 2026</small>
+                  <div class="button-row reviews-style-3">
+                    <button class="button small" data-open="replyModal">Reply</button>
+                    <button class="button small" data-message="Review reported to the administrator.">Report</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+          <aside>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Rating Summary</h2>
+              </div>
+              <div class="panel-body reviews-style-4">
+                <strong class="reviews-style-5">4.8</strong>
+                <div class="stars reviews-style-6">★★★★★</div>
+                <p class="reviews-style-7">Based on 48 verified reviews</p>
+                <div class="metric"><span>5 Stars</span><strong>38 (79%)</strong></div>
+                <div class="progress"><i class="reviews-style-8"></i></div>
+                <div class="metric"><span>4 Stars</span><strong>8 (17%)</strong></div>
+                <div class="progress"><i class="reviews-style-9"></i></div>
+                <div class="metric"><span>3 Stars</span><strong>2 (4%)</strong></div>
+                <div class="progress"><i class="reviews-style-10"></i></div>
+                <div class="metric"><span>2–1 Stars</span><strong>0</strong></div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+    <div class="modal" id="replyModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Reply to Review</h2>
+          <button class="close-btn" data-close="replyModal">×</button>
+        </div>
+        <form class="panel-body demo-form" data-success="Your reply was published.">
+          <div class="field">
+            <label>Your Reply</label>
+            <textarea required placeholder="Thank the buyer or respond politely to their concern..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="button" type="button" data-close="replyModal">Cancel</button>
+            <button class="button primary">Publish Reply</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/reviews.js"></script>
+  </body>
+</html>

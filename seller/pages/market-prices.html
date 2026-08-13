@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Market Prices | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/market-prices.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders<span class="nav-badge">5</span></a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link active" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages<span class="nav-badge">3</span></a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search market prices...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Market Prices</h1>
+            <p>Compare current agricultural prices and make informed selling decisions.</p>
+          </div>
+          <span class="status green">Updated: 17 July 2026, 16:30</span>
+        </section>
+        <section class="stats">
+          <article class="stat">
+            <span class="stat-icon">📍</span>
+            <div>
+              <strong>30</strong>
+              <span>Districts Covered</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">🌾</span>
+            <div>
+              <strong>48</strong>
+              <span>Products Tracked</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">↑</span>
+            <div>
+              <strong>21</strong>
+              <span>Prices Increased</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">↓</span>
+            <div>
+              <strong>12</strong>
+              <span>Prices Decreased</span>
+            </div>
+          </article>
+        </section>
+        <section class="panel">
+          <div class="toolbar">
+            <input class="search-input" data-filter-table="pricesTable" placeholder="Search product or district...">
+            <div class="filters">
+              <select>
+                <option>All Districts</option>
+                <option>Kigali</option>
+                <option>Huye</option>
+                <option>Musanze</option>
+                <option>Nyagatare</option>
+                <option>Rusizi</option>
+              </select>
+              <select>
+                <option>All Categories</option>
+                <option>Vegetables</option>
+                <option>Grains</option>
+                <option>Fruits</option>
+                <option>Tubers</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="pricesTable">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>District</th>
+                  <th>Current Price</th>
+                  <th>Today</th>
+                  <th>Weekly Average</th>
+                  <th>Highest Price</th>
+                  <th>Lowest Price</th>
+                  <th>Trend</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🍅 Tomatoes</td>
+                  <td>Kigali</td>
+                  <td><strong>600 RWF/kg</strong></td>
+                  <td class="price-up">↑ 20 RWF</td>
+                  <td>575 RWF</td>
+                  <td>640 RWF</td>
+                  <td>530 RWF</td>
+                  <td><span class="status green">Rising</span></td>
+                </tr>
+                <tr>
+                  <td>🌽 Maize</td>
+                  <td>Huye</td>
+                  <td><strong>420 RWF/kg</strong></td>
+                  <td class="price-down">↓ 15 RWF</td>
+                  <td>438 RWF</td>
+                  <td>470 RWF</td>
+                  <td>410 RWF</td>
+                  <td><span class="status red">Falling</span></td>
+                </tr>
+                <tr>
+                  <td>🥔 Irish Potatoes</td>
+                  <td>Musanze</td>
+                  <td><strong>350 RWF/kg</strong></td>
+                  <td class="price-up">↑ 10 RWF</td>
+                  <td>342 RWF</td>
+                  <td>380 RWF</td>
+                  <td>320 RWF</td>
+                  <td><span class="status green">Rising</span></td>
+                </tr>
+                <tr>
+                  <td>🍌 Bananas</td>
+                  <td>Rusizi</td>
+                  <td><strong>520 RWF/kg</strong></td>
+                  <td>— No change</td>
+                  <td>518 RWF</td>
+                  <td>550 RWF</td>
+                  <td>490 RWF</td>
+                  <td><span class="status gray">Stable</span></td>
+                </tr>
+                <tr>
+                  <td>🫘 Beans</td>
+                  <td>Nyagatare</td>
+                  <td><strong>1,250 RWF/kg</strong></td>
+                  <td class="price-up">↑ 30 RWF</td>
+                  <td>1,215 RWF</td>
+                  <td>1,300 RWF</td>
+                  <td>1,180 RWF</td>
+                  <td><span class="status green">Rising</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <div class="equal-col market-prices-style-1">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>7-Day Price Trend</h2>
+              <select>
+                <option>Tomatoes</option>
+                <option>Maize</option>
+                <option>Potatoes</option>
+              </select>
+            </div>
+            <div class="chart-wrap">
+              <div class="chart">
+                <div class="bar-group">
+                  <i class="bar market-prices-style-2"></i>
+                  <span class="bar-label">Mon</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-3"></i>
+                  <span class="bar-label">Tue</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-4"></i>
+                  <span class="bar-label">Wed</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-5"></i>
+                  <span class="bar-label">Thu</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-6"></i>
+                  <span class="bar-label">Fri</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-7"></i>
+                  <span class="bar-label">Sat</span>
+                </div>
+                <div class="bar-group">
+                  <i class="bar market-prices-style-8"></i>
+                  <span class="bar-label">Sun</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Price Guidance</h2>
+            </div>
+            <div class="panel-body">
+              <div class="list-item">
+                <span class="list-icon">💡</span>
+                <div class="list-copy">
+                  box<strong>Tomato demand is increasing</strong>
+                  <p>Kigali prices rose 8% this week. Consider listing available stock.</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="list-icon">⚠</span>
+                <div class="list-copy">
+                  <strong>Maize prices are softening</strong>
+                  <p>Compare nearby districts before accepting large orders.</p>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="list-icon">📍</span>
+                <div class="list-copy">
+                  <strong>Best potato price</strong>
+                  <p>Rubavu currently records the highest district average.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/market-prices.js"></script>
+  </body>
+</html>

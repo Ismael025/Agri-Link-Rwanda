@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Messages | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/messages.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders<span class="nav-badge">5</span></a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link active" href="messages.html">💬 Messages<span class="nav-badge">3</span></a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search messages...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Messages</h1>
+            <p>Discuss products, quantities, prices and delivery details with buyers.</p>
+          </div>
+          <button class="button primary" data-message="Choose a buyer to start a new conversation.">＋ New Message</button>
+        </section>
+        <section class="panel">
+          <div class="conversation-layout">
+            <aside class="conversation-list">
+              <div class="tabs">
+                <button class="tab active">Inbox (3)</button>
+                <button class="tab">Unread</button>
+                <button class="tab">Sent</button>
+              </div>
+              <div class="conversation-search">
+                <input class="search-input" placeholder="Search conversations...">
+              </div>
+              <div class="conversation active">
+                <span class="person-mark">AK</span>
+                <div class="list-copy">
+                  <strong>Amahoro Kitchen</strong>
+                  <p>Can you deliver the tomatoes tomorrow?</p>
+                  <small>5 minutes ago</small>
+                </div>
+                <span class="nav-badge">2</span>
+              </div>
+              <div class="conversation">
+                <span class="person-mark">HM</span>
+                <div class="list-copy">
+                  <strong>Huye Market</strong>
+                  <p>The maize order has been paid.</p>
+                  <small>1 hour ago</small>
+                </div>
+              </div>
+              <div class="conversation">
+                <span class="person-mark">GH</span>
+                <div class="list-copy">
+                  <strong>Green Hills Hotel</strong>
+                  <p>Please confirm the potato quality grade.</p>
+                  <small>Yesterday</small>
+                </div>
+                <span class="nav-badge">1</span>
+              </div>
+              <div class="conversation">
+                <span class="person-mark">CS</span>
+                <div class="list-copy">
+                  <strong>City Supermarket</strong>
+                  <p>Thank you, the avocados arrived safely.</p>
+                  <small>2 days ago</small>
+                </div>
+              </div>
+            </aside>
+            <section class="chat">
+              <div class="chat-head">
+                <div class="person">
+                  <span class="person-mark">AK</span>
+                  <div>
+                    <strong>Amahoro Kitchen</strong>
+                    <small class="messages-style-1">● Online • Order #AGR-1048</small>
+                  </div>
+                </div>
+              </div>
+              <div class="messages" id="messages">
+                <div class="bubble">Hello Ismael Farm. Are the fresh tomatoes still available in the requested quantity?</div>
+                <div class="bubble mine">Hello. Yes, we have 480 kg available. Your order of 120 kg can be prepared today.</div>
+                <div class="bubble">Great. Can you deliver the tomatoes tomorrow morning to Kicukiro?</div>
+                <div class="bubble mine">Yes, delivery can be arranged. I will confirm the delivery time after accepting the order.</div>
+                <div class="bubble">Thank you. Please send a clear image of the packed products before dispatch.</div>
+              </div>
+              <form class="chat-form" id="chatForm">
+                <button class="button" type="button" data-message="Select an image or document to attach.">📎</button>
+                <input id="chatInput" placeholder="Write your message..." aria-label="Message">
+                <button class="button primary" type="submit">Send</button>
+              </form>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/messages.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage Agri-Link administrator profile.">
+    <title>Administrator Profile | Agri-Link Admin</title>
+    <link rel="stylesheet" href="../styles/profile.css">
+  </head>
+  <body data-page="profile">
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin-dashboard.html">
+          <span class="brand-mark"><img class="local-icon" src="../icons/leaf.svg" alt=""></span>
+          <span><strong>Agri-Link</strong><small>Admin Portal</small></span>
+        </a>
+        <p class="nav-label">Platform</p>
+        <nav class="nav" aria-label="Admin navigation">
+          <a href="admin-dashboard.html"><img class="local-icon" src="../icons/dashboard.svg" alt="">Dashboard</a>
+          <a href="users.html"><img class="local-icon" src="../icons/users.svg" alt="">Users<span class="badge">12</span></a>
+          <a href="verifications.html"><img class="local-icon" src="../icons/shield.svg" alt="">Verifications<span class="badge">7</span></a>
+          <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">Products<span class="badge">9</span></a>
+          <a href="categories.html"><img class="local-icon" src="../icons/tag.svg" alt="">Categories</a>
+          <a href="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">Orders</a>
+          <a href="payments.html"><img class="local-icon" src="../icons/payment.svg" alt="">Payments</a>
+          <a href="deliveries.html"><img class="local-icon" src="../icons/delivery.svg" alt="">Deliveries</a>
+          <a href="disputes.html"><img class="local-icon" src="../icons/gavel.svg" alt="">Disputes<span class="badge">4</span></a>
+          <a href="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages<span class="badge">3</span></a>
+          <a href="reports.html"><img class="local-icon" src="../icons/report.svg" alt="">Reports</a>
+          <a href="notifications.html"><img class="local-icon" src="../icons/bell.svg" alt="">Notifications</a>
+          <a href="audit-logs.html"><img class="local-icon" src="../icons/audit.svg" alt="">Audit Logs</a>
+        </nav>
+        <p class="nav-label">Account</p>
+        <nav class="nav" aria-label="Admin account navigation">
+          <a class="active" href="profile.html"><img class="local-icon" src="../icons/user.svg" alt="">Profile</a>
+          <a href="settings.html"><img class="local-icon" src="../icons/settings.svg" alt="">Settings</a>
+          <a href="help.html"><img class="local-icon" src="../icons/help.svg" alt="">Help Center</a>
+        </nav>
+        <div class="logout">
+          <a href="logout.html"><img class="local-icon" src="../icons/logout.svg" alt="">Logout</a>
+        </div>
+      </aside>
+      <div class="overlay" data-action="close-nav"></div>
+      <div class="main">
+        <header class="topbar">
+          <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation"><img class="local-icon" src="../icons/menu.svg" alt=""></button>
+          <label class="global-search"><img class="local-icon" src="../icons/search.svg" alt=""><input id="globalSearch" type="search" placeholder="Search this page..." aria-label="Search this page"></label>
+          <div class="account">
+            <a class="icon-btn" href="notifications.html" aria-label="Notifications"><img class="local-icon" src="../icons/bell.svg" alt=""><span class="dot"></span></a>
+            <span class="avatar">IN</span>
+            <span class="account-copy"><strong>Ismael N.</strong><small>Super Administrator</small></span>
+          </div>
+        </header>
+        <main class="content">
+          <section class="page-head">
+            <div>
+              <h1>Administrator Profile</h1>
+              <p>Manage your identity and administrative contact information.</p>
+            </div>
+            <button class="button primary" data-action="save"><img class="local-icon" src="../icons/check.svg" alt="">Save Changes</button>
+          </section>
+          <section class="panel profile-card">
+            <div class="profile-cover"></div>
+            <div class="profile-summary">
+              <span class="profile-avatar">IN</span>
+              <div>
+                <h2>Ismael Niyokwiringirwa</h2>
+                <p>Super Administrator • Active since July 2026</p>
+              </div>
+              <span class="status green">Verified administrator</span>
+            </div>
+            <form class="panel-body admin-form">
+              <label>First name<input value="Ismael"></label>
+              <label>Last name<input value="Niyokwiringirwa"></label>
+              <label>Email address<input type="email" value="admin@agri-link.rw"></label>
+              <label>Phone number<input value="+250 788 000 000"></label>
+              <label>Administrative role<select><option>Super Administrator</option></select></label>
+              <label>Primary location<input value="Kigali, Rwanda"></label>
+              <label class="full">Profile note<textarea>Platform administrator responsible for verification, moderation and operational supervision.</textarea></label>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scripts/profile.js"></script>
+  </body>
+</html>

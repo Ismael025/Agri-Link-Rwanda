@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agri-Link administrator help and operating guidance.">
+    <title>Admin Help Center | Agri-Link Admin</title>
+    <link rel="stylesheet" href="../styles/help.css">
+  </head>
+  <body data-page="help">
+    <div class="app">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="admin-dashboard.html">
+          <span class="brand-mark"><img class="local-icon" src="../icons/leaf.svg" alt=""></span>
+          <span><strong>Agri-Link</strong><small>Admin Portal</small></span>
+        </a>
+        <p class="nav-label">Platform</p>
+        <nav class="nav" aria-label="Admin navigation">
+          <a href="admin-dashboard.html"><img class="local-icon" src="../icons/dashboard.svg" alt="">Dashboard</a>
+          <a href="users.html"><img class="local-icon" src="../icons/users.svg" alt="">Users<span class="badge">12</span></a>
+          <a href="verifications.html"><img class="local-icon" src="../icons/shield.svg" alt="">Verifications<span class="badge">7</span></a>
+          <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">Products<span class="badge">9</span></a>
+          <a href="categories.html"><img class="local-icon" src="../icons/tag.svg" alt="">Categories</a>
+          <a href="orders.html"><img class="local-icon" src="../icons/cart.svg" alt="">Orders</a>
+          <a href="payments.html"><img class="local-icon" src="../icons/payment.svg" alt="">Payments</a>
+          <a href="deliveries.html"><img class="local-icon" src="../icons/delivery.svg" alt="">Deliveries</a>
+          <a href="disputes.html"><img class="local-icon" src="../icons/gavel.svg" alt="">Disputes<span class="badge">4</span></a>
+          <a href="messages.html"><img class="local-icon" src="../icons/message.svg" alt="">Messages<span class="badge">3</span></a>
+          <a href="reports.html"><img class="local-icon" src="../icons/report.svg" alt="">Reports</a>
+          <a href="notifications.html"><img class="local-icon" src="../icons/bell.svg" alt="">Notifications</a>
+          <a href="audit-logs.html"><img class="local-icon" src="../icons/audit.svg" alt="">Audit Logs</a>
+        </nav>
+        <p class="nav-label">Account</p>
+        <nav class="nav" aria-label="Admin account navigation">
+          <a href="profile.html"><img class="local-icon" src="../icons/user.svg" alt="">Profile</a>
+          <a href="settings.html"><img class="local-icon" src="../icons/settings.svg" alt="">Settings</a>
+          <a class="active" href="help.html"><img class="local-icon" src="../icons/help.svg" alt="">Help Center</a>
+        </nav>
+        <div class="logout">
+          <a href="logout.html"><img class="local-icon" src="../icons/logout.svg" alt="">Logout</a>
+        </div>
+      </aside>
+      <div class="overlay" data-action="close-nav"></div>
+      <div class="main">
+        <header class="topbar">
+          <button class="menu-btn" type="button" data-action="toggle-nav" aria-label="Open navigation"><img class="local-icon" src="../icons/menu.svg" alt=""></button>
+          <label class="global-search"><img class="local-icon" src="../icons/search.svg" alt=""><input id="globalSearch" type="search" placeholder="Search this page..." aria-label="Search this page"></label>
+          <div class="account">
+            <a class="icon-btn" href="notifications.html" aria-label="Notifications"><img class="local-icon" src="../icons/bell.svg" alt=""><span class="dot"></span></a>
+            <span class="avatar">IN</span>
+            <span class="account-copy"><strong>Ismael N.</strong><small>Super Administrator</small></span>
+          </div>
+        </header>
+        <main class="content">
+          <section class="page-head">
+            <div>
+              <h1>Admin Help Center</h1>
+              <p>Find guidance for common administrative tasks and platform procedures.</p>
+            </div>
+            <button class="button" data-primary-action><img class="local-icon" src="../icons/message.svg" alt="">Contact Technical Support</button>
+          </section>
+          <section class="help-hero">
+            <h2>How can we help?</h2>
+            <label><img class="local-icon" src="../icons/search.svg" alt=""><input id="helpSearch" type="search" placeholder="Search verification, orders, payments or security..."></label>
+          </section>
+          <div class="help-grid">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Administration Guides</h2>
+              </div>
+              <div class="guide-list">
+                <a href="verifications.html"><img class="local-icon" src="../icons/shield.svg" alt="">Verify a farmer account<span>Identity and document checks</span></a>
+                <a href="products.html"><img class="local-icon" src="../icons/box.svg" alt="">Moderate a product listing<span>Approval and restriction rules</span></a>
+                <a href="disputes.html"><img class="local-icon" src="../icons/gavel.svg" alt="">Resolve a dispute<span>Evidence and fair resolution</span></a>
+                <a href="audit-logs.html"><img class="local-icon" src="../icons/audit.svg" alt="">Review security activity<span>Administrative audit trail</span></a>
+              </div>
+            </section>
+            <section class="panel">
+              <div class="panel-head">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+              <div class="panel-body faq">
+                <details>
+                  <summary>Who can create an administrator account?</summary>
+                  <p>Administrator accounts are created privately by an authorized super administrator. They are not available through public registration.</p>
+                </details>
+                <details>
+                  <summary>What should be checked before farmer approval?</summary>
+                  <p>Confirm identity, district, contact information, business or cooperative documents, and any risk indicators.</p>
+                </details>
+                <details>
+                  <summary>Can an admin edit a completed payment?</summary>
+                  <p>No. Financial records should remain immutable. Corrections should use a documented refund or adjustment process.</p>
+                </details>
+                <details>
+                  <summary>Why are actions recorded in audit logs?</summary>
+                  <p>Audit logs provide accountability, security monitoring and traceability for sensitive platform actions.</p>
+                </details>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scripts/help.js"></script>
+  </body>
+</html>

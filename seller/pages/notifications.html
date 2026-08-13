@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Notifications | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/notifications.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders</a>
+        <a class="nav-link" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages</a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link active" href="notifications.html">🔔 Notifications<span class="nav-badge">6</span></a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search notifications...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Notifications</h1>
+            <p>Keep track of orders, payments, deliveries, reviews and platform updates.</p>
+          </div>
+          <div class="button-row">
+            <button class="button" data-message="All notifications marked as read.">✓ Mark All Read</button>
+            <a class="button" href="settings.html">⚙ Preferences</a>
+          </div>
+        </section>
+        <section class="panel">
+          <div class="tabs">
+            <button class="tab active" data-tab="allNotices">All (6)</button>
+            <button class="tab" data-tab="orderNotices">Orders</button>
+            <button class="tab" data-tab="paymentNotices">Payments</button>
+            <button class="tab" data-tab="systemNotices">System</button>
+          </div>
+          <div id="allNotices" class="tab-content active panel-body">
+            <article class="list-item">
+              <span class="list-icon">🛒</span>
+              <div class="list-copy">
+                <strong>New order received <span class="status blue">New</span></strong>
+                <p>Amahoro Kitchen ordered 120 kg of Fresh Tomatoes for 72,000 RWF.</p>
+                <small>5 minutes ago</small>
+              </div>
+              <a class="button small" href="orders.html">View Order</a>
+            </article>
+            <article class="list-item">
+              <span class="list-icon">💰</span>
+              <div class="list-copy">
+                <strong>Payment received <span class="status blue">New</span></strong>
+                <p>96,000 RWF from order #AGR-1045 was added to your wallet.</p>
+                <small>1 hour ago</small>
+              </div>
+              <a class="button small" href="wallet.html">View Payment</a>
+            </article>
+            <article class="list-item">
+              <span class="list-icon">🚚</span>
+              <div class="list-copy">
+                <strong>Delivery completed</strong>
+                <p>Order #AGR-1044 was confirmed as delivered by the buyer.</p>
+                <small>3 hours ago</small>
+              </div>
+              <a class="button small" href="orders.html">View Order</a>
+            </article>
+            <article class="list-item">
+              <span class="list-icon">⭐</span>
+              <div class="list-copy">
+                <strong>New five-star review <span class="status blue">New</span></strong>
+                <p>Aline Kayitesi reviewed your Fresh Tomatoes.</p>
+                <small>5 hours ago</small>
+              </div>
+              <a class="button small" href="reviews.html">View Review</a>
+            </article>
+            <article class="list-item">
+              <span class="list-icon">✓</span>
+              <div class="list-copy">
+                <strong>Product approved</strong>
+                <p>Your Fresh Avocados listing is now visible to buyers.</p>
+                <small>Yesterday</small>
+              </div>
+              <a class="button small" href="products.html">View Product</a>
+            </article>
+            <article class="list-item">
+              <span class="list-icon">📢</span>
+              <div class="list-copy">
+                <strong>Agri-Link system update</strong>
+                <p>Market price information will now be refreshed several times each day.</p>
+                <small>2 days ago</small>
+              </div>
+              <button class="button small" data-message="System announcement opened.">Read More</button>
+            </article>
+          </div>
+          <div id="orderNotices" class="tab-content panel-body">
+            <p>Order and delivery notifications are listed here.</p>
+          </div>
+          <div id="paymentNotices" class="tab-content panel-body">
+            <p>Payment and withdrawal notifications are listed here.</p>
+          </div>
+          <div id="systemNotices" class="tab-content panel-body">
+            <p>Product approval and system announcements are listed here.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/notifications.js"></script>
+  </body>
+</html>

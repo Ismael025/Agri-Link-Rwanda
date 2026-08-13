@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Buyers | Agri-Link</title>
+    <link rel="stylesheet" href="../styles/buyers.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="logo" href="farmer-dashboard.html">
+        <span class="logo-mark">🌱</span>
+        <span><strong>Agri-Link</strong><small>Farmer Portal</small></span>
+      </a>
+      <p class="nav-title">Workspace</p>
+      <nav>
+        <a class="nav-link" href="farmer-dashboard.html">▦ Dashboard</a>
+        <a class="nav-link" href="products.html">📦 My Products</a>
+        <a class="nav-link" href="orders.html">🛒 Orders<span class="nav-badge">5</span></a>
+        <a class="nav-link active" href="buyers.html">👥 Buyers</a>
+        <a class="nav-link" href="market-prices.html">📈 Market Prices</a>
+        <a class="nav-link" href="messages.html">💬 Messages<span class="nav-badge">3</span></a>
+        <a class="nav-link" href="analytics.html">📊 Analytics</a>
+        <a class="nav-link" href="reviews.html">⭐ Reviews</a>
+        <a class="nav-link" href="wallet.html">💳 Wallet</a>
+        <a class="nav-link" href="notifications.html">🔔 Notifications</a>
+      </nav>
+      <p class="nav-title">Account</p>
+      <nav>
+        <a class="nav-link" href="profile.html">👤 Profile</a>
+        <a class="nav-link" href="settings.html">⚙ Settings</a>
+        <a class="nav-link" href="help.html">❓ Help Center</a>
+        <a class="nav-link" href="logout.html">↪ Logout</a>
+      </nav>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+    <div class="page">
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton">☰</button>
+        <div class="global-search">
+          <input placeholder="Search buyers...">
+        </div>
+        <div class="account">
+          <button class="icon-btn">🔔</button>
+          <span class="avatar">IM</span>
+          <span class="account-copy"><strong>Ismael Farm</strong><small>Verified Farmer</small></span>
+        </div>
+      </header>
+      <main class="content">
+        <section class="page-head">
+          <div>
+            <h1>Boxes</h1>
+            <p>View and communicate with customers who purchase your products.</p>
+          </div>
+          <button class="button" data-message="Buyer list exported.">⇩ Export Buyers</button>
+        </section>
+        <section class="stats">
+          <article class="stat">
+            <span class="stat-icon">👥</span>
+            <div>
+              <strong>32</strong>
+              <span>Total Buyers</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">↻</span>
+            <div>
+              <strong>18</strong>
+              <span>Returning Buyers</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">＋</span>
+            <div>
+              <strong>6</strong>
+              <span>New This Month</span>
+            </div>
+          </article>
+          <article class="stat">
+            <span class="stat-icon">⭐</span>
+            <div>
+              <strong>4.7</strong>
+              <span>Average Buyer Rating</span>
+            </div>
+          </article>
+        </section>
+        <section class="panel">
+          <div class="toolbar">
+            <input class="search-input" data-filter-table="buyersTable" placeholder="Search buyer, company or district...">
+            <div class="filters">
+              <select>
+                <option>All Districts</option>
+                <option>Kigali</option>
+                <option>Huye</option>
+                <option>Musanze</option>
+                <option>Rubavu</option>
+              </select>
+              <select>
+                <option>Most Orders</option>
+                <option>Highest Rating</option>
+                <option>Recently Added</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table id="buyersTable">
+              <thead>
+                <tr>
+                  <th>Buyer</th>
+                  <th>Company</th>
+                  <th>District</th>
+                  <th>Total Orders</th>
+                  <th>Total Spent</th>
+                  <th>Rating</th>
+                  <th>Last Order</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="person"><span class="person-mark">AK</span><strong>Aline Kayitesi</strong></div>
+                  </td>
+                  <td>Amahoro Kitchen</td>
+                  <td>Kicukiro</td>
+                  <td>12</td>
+                  <td>845,000 RWF</td>
+                  <td><span class="stars">★★★★★</span> 4.9</td>
+                  <td>17 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small" data-open="buyerModal">View Profile</button>
+                      <a class="button small primary" href="messages.html">Message</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="person"><span class="person-mark">JM</span><strong>Jean Mugabo</strong></div>
+                  </td>
+                  <td>Huye Market</td>
+                  <td>Huye</td>
+                  <td>9</td>
+                  <td>671,000 RWF</td>
+                  <td><span class="stars">★★★★★</span> 4.8</td>
+                  <td>16 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small" data-open="buyerModal">View Profile</button>
+                      <a class="button small primary" href="messages.html">Message</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="person"><span class="person-mark">MN</span><strong>Marie Nyiraneza</strong></div>
+                  </td>
+                  <td>Green Hills Hotel</td>
+                  <td>Gasabo</td>
+                  <td>7</td>
+                  <td>523,500 RWF</td>
+                  <td><span class="stars">★★★★☆</span> 4.5</td>
+                  <td>15 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small" data-open="buyerModal">View Profile</button>
+                      <a class="button small primary" href="messages.html">Message</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="person"><span class="person-mark">EN</span><strong>Eric Ntwari</strong></div>
+                  </td>
+                  <td>City Supermarket</td>
+                  <td>Nyarugenge</td>
+                  <td>6</td>
+                  <td>410,000 RWF</td>
+                  <td><span class="stars">★★★★★</span> 4.7</td>
+                  <td>14 Jul 2026</td>
+                  <td>
+                    <div class="button-row">
+                      <button class="button small" data-open="buyerModal">View Profile</button>
+                      <a class="button small primary" href="messages.html">Message</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table-footer">
+            <span>Showing 4 of 32 buyers</span>
+            <span>Page 1 of 8</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal" id="buyerModal">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Buyer Profile</h2>
+          <button class="close-btn" data-close="buyerModal">×</button>
+        </div>
+        <div class="panel-body">
+          <div class="person">
+            <span class="person-mark">AK</span>
+            <div>
+              <strong>Aline Kayitesi</strong>
+              <p class="buyers-style-1">Amahoro Kitchen • Verified Buyer</p>
+            </div>
+          </div>
+          <div class="metric"><span>District</span><strong>Kicukiro</strong></div>
+          <div class="metric"><span>Total orders</span><strong>12</strong></div>
+          <div class="metric"><span>Buyer rating</span><strong class="stars">★★★★★ 4.9</strong></div>
+          <div class="metric"><span>Member since</span><strong>February 2026</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <script src="../scripts/buyers.js"></script>
+  </body>
+</html>
